@@ -1,0 +1,413 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c4aa7351-cdae-4946-acad-b2a9a007cee5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Case</ID>
+  <Name>Case</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4737" scrolltop="-5728" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11642" y="16457" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Case" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Case" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-1280" top="-1300" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="2550" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Case-Case]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="1" sourceattachpoint="12" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="20" y="850" />
+              <point x="-980" y="850" />
+              <point x="-980" y="-1000" />
+              <point x="970" y="-1000" />
+              <point x="970" y="0" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4737</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5728</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c60f39a0-19b2-40c0-b3aa-50ef26b3e3a9">
+    <DataSourceViewID>Fog Bugz View</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="3f0c1016-c5f3-4ae6-a552-04885f8a7adf">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="89fd5a38-ba78-4c74-87e7-6721accb01f3">
+      <ID>ID Case</ID>
+      <Name>ID Case</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d0c8b173-90bd-4e6e-93d0-fdda8c963707">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="75d1c921-9356-4823-b171-26334b448732">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDCase</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="11aa7157-66f8-46c4-9067-76e524e62008">
+          <AttributeID>Title</AttributeID>
+          <Name>Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0651331e-3785-4bf7-a6bd-44d12b87b29e">
+          <AttributeID>Status</AttributeID>
+          <Name>Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="584794f1-e39f-4c7c-a055-e48ebf904a96">
+          <AttributeID>Project</AttributeID>
+          <Name>Project</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eccbd5c2-bded-4387-8df2-f4fb1dc6d414">
+          <AttributeID>Area</AttributeID>
+          <Name>Area</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="747bb461-d9c7-469e-8401-55e8b372718e">
+          <AttributeID>Category</AttributeID>
+          <Name>Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e9ff5032-a3a8-47e4-bf55-3f6a08a7bf68">
+          <AttributeID>Assigned To</AttributeID>
+          <Name>Assigned To</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ce9efc71-13e9-498e-992b-d43afe769d6d">
+          <AttributeID>Priority</AttributeID>
+          <Name>Priority</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="01b12037-bbcc-4907-a22a-6f9ef5b9ecf6">
+          <AttributeID>Opened Date</AttributeID>
+          <Name>Opened Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="05e4d8d6-a3fa-49bf-9066-11ff92dcc423">
+          <AttributeID>Closed Date</AttributeID>
+          <Name>Closed Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7ef488e3-637f-413a-96c8-df4626512d80">
+          <AttributeID>ID Parent Case</AttributeID>
+          <Name>ID Parent Case</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="527cba6d-d579-4e43-85b0-aa03001c556c">
+          <AttributeID>Opened By</AttributeID>
+          <Name>Opened By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ba03d2cd-381f-412d-a522-b7bfc2f48c85">
+          <AttributeID>Milestone</AttributeID>
+          <Name>Milestone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8234acde-6696-4f89-a8bf-daa5d7944324">
+          <AttributeID>Resolved By</AttributeID>
+          <Name>Resolved By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e4843e41-0e9c-4d39-a70b-03639f31e925">
+          <AttributeID>Closed By</AttributeID>
+          <Name>Closed By</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8a9d8546-02a3-4dca-b3ab-63e9262de743">
+      <ID>Title</ID>
+      <Name>Title</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="def1223a-41a9-4e99-b4e6-d6e5dfa1c3fe">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="15d2ae22-6380-46c6-bb36-11fe9e86ac5b">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="26002dee-1649-4ad3-bc30-5d6cf6cd2772">
+      <ID>Status</ID>
+      <Name>Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed279dd9-c886-4297-93bb-0f936a7ec139">
+          <DataType>WChar</DataType>
+          <DataSize>70</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="709009b0-3737-4c41-b56f-655378073b9f">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="03a82f0c-e8c3-432d-9117-91bf22ead145">
+      <ID>Project</ID>
+      <Name>Project</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="36bc89af-53a7-4960-8e95-eb8894f9f38c">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="035bc553-b83e-4279-9e66-cb74412ba7ad">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Project</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bdaaf26e-8bb2-4cbe-ab02-1b65cd9210ba">
+      <ID>Area</ID>
+      <Name>Area</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="db58b2c5-271b-4c0f-981d-bfb1585fb390">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af327ea3-b410-4bc7-8e6b-ad9399c32726">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Area</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f1e9d25e-5304-4ede-ba8a-c05587a19d84">
+      <ID>Category</ID>
+      <Name>Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b29014e-9140-48ec-9ae3-335030ee0e40">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="634deca7-3451-4bc0-92e4-66cca55b0a95">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Category</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8050a176-8b52-4114-95db-9d3523326193">
+      <ID>Assigned To</ID>
+      <Name>Assigned To</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb8db5c7-ee6d-4e09-a66c-6515b8b55d51">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2466c363-703b-40a0-a967-1f1c545fe2ac">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>AssignedTo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bb909533-00fb-4cb5-9584-9ea7777d7127">
+      <ID>Priority</ID>
+      <Name>Priority</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="14bfe4b4-a17d-4360-ba9f-fc8bcb89d68f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="000fb45e-4469-4673-a03b-2ef4bb1aa2e1">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Priority</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ca13265f-231d-45b8-b1b6-b0af3fb0177d">
+      <ID>Opened Date</ID>
+      <Name>Opened Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4b8731c8-7f72-4a48-a1ac-4c7d30955937">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44e78f94-55a3-4ea2-8d86-cc5160f651aa">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>OpenedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cc1edacb-a9c5-44cc-9474-c149026ad612">
+      <ID>Closed Date</ID>
+      <Name>Closed Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d7fe6b42-9af1-44be-a9f4-8f719fecbb1a">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c9a6c860-f364-4645-8ff2-3e5c2983cc24">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ClosedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="86602004-94ec-4659-89f2-01df0d36f893">
+      <ID>ID Parent Case</ID>
+      <Name>ID Parent Case</Name>
+      <Usage>Parent</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="acabf1d0-5ccc-4853-8ac9-bebf3ca7f3d0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d14dc5ca-58e9-481d-94f9-84312d7682f4">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDParentCase</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <MembersWithData>NonLeafDataHidden</MembersWithData>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="54b5920b-002d-48aa-810f-72bd771e9a5b">
+      <ID>Opened By</ID>
+      <Name>Opened By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5faeff30-a6fd-422d-ab76-38254309cf49">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea80f554-6ea1-4373-b88b-d3abbb7b4186">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>OpenedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8264e14f-fa18-4560-af06-1ff21f26e9cc">
+      <ID>Milestone</ID>
+      <Name>Milestone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3de3405a-d18d-434f-984a-aa9e39f68967">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="814d81bf-a0c9-4814-b755-84cfa68a8b8b">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Milestone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="70d6730d-6c0e-4fea-8a7a-d3f5306c0b45">
+      <ID>Resolved By</ID>
+      <Name>Resolved By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4b3d3ff0-99e4-4834-9f70-17856e0e9738">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1cb16b1e-dae8-4fdb-98d4-0ae314bc6f0e">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ResolvedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="af462b05-5b91-4f32-b739-c690d17bcefb">
+      <ID>Closed By</ID>
+      <Name>Closed By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="08ff01ac-5b2f-41fc-857d-0ef2c5b0b6f7">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1dee0269-0c48-4888-b672-a62c67ea1013">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ClosedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -6,10 +6,59 @@
     <Name>FogBugz.database</Name>
     <FullPath>FogBugz.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Fog Bugz Cube.cube</Name>
+      <FullPath>Fog Bugz Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Fog Bugz Cube.partitions</Name>
+          <FullPath>Fog Bugz Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Time Table.dim</Name>
+      <FullPath>Time Table.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Case.dim</Name>
+      <FullPath>Case.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Fog Bugz.ds</Name>
+      <FullPath>Fog Bugz.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Fog Bugz View.dsv</Name>
+      <FullPath>Fog Bugz View.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Fog Bugz</Id>
+            <Name>Fog Bugz</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=PC-LONGPHI;Integrated Security=SSPI;Initial Catalog=FogBugz</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Fog Bugz</Id>
+            <Name>Fog Bugz</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
