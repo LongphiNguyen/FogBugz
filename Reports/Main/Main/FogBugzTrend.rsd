@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>FogBugz Cube</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="CaseResolvedBy">
+          <DefaultValue>[Case].[Resolved By].&amp;[Mark Hill]</DefaultValue>
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+          <rd:IsMultiValued>true</rd:IsMultiValued>
+        </DataSetParameter>
+        <DataSetParameter Name="ClosedDateYear">
+          <DefaultValue>[Closed Date].[Year].&amp;[2016]</DefaultValue>
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+          <rd:IsMultiValued>true</rd:IsMultiValued>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText> SELECT NON EMPTY { [Measures].[Case Count] } ON COLUMNS, NON EMPTY { ([Case].[Resolved By].[Resolved By].ALLMEMBERS * [Case].[Milestone].[Milestone].ALLMEMBERS * [Case].[Category].[Category].ALLMEMBERS * [Case].[ID Case].[ID Case].ALLMEMBERS * [Case].[Title].[Title].ALLMEMBERS * [Case].[Opened Date].[Opened Date].ALLMEMBERS * [Case].[Closed Date].[Closed Date].ALLMEMBERS * [Case].[Project].[Project].ALLMEMBERS * [Case].[Area].[Area].ALLMEMBERS * [Opened Date].[Year].[Year].ALLMEMBERS * [Opened Date].[Month Name].[Month Name].ALLMEMBERS * [Closed Date].[Year].[Year].ALLMEMBERS * [Closed Date].[Month Name].[Month Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@ClosedDateYear, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@CaseResolvedBy, CONSTRAINED) ) ON COLUMNS FROM [FogBugz])) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+      <rd:DesignerState><QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"><CommandType>MDX</CommandType><QuerySpecification xsi:type="MDXQuerySpecification"><Select><Items><Item><ID xsi:type="Level"><DimensionName>Case</DimensionName><HierarchyName>Resolved By</HierarchyName><HierarchyUniqueName>[Case].[Resolved By]</HierarchyUniqueName><LevelName>Resolved By</LevelName><UniqueName>[Case].[Resolved By].[Resolved By]</UniqueName></ID><ItemCaption>Resolved By</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Case</DimensionName><HierarchyName>Milestone</HierarchyName><HierarchyUniqueName>[Case].[Milestone]</HierarchyUniqueName><LevelName>Milestone</LevelName><UniqueName>[Case].[Milestone].[Milestone]</UniqueName></ID><ItemCaption>Milestone</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Case</DimensionName><HierarchyName>Category</HierarchyName><HierarchyUniqueName>[Case].[Category]</HierarchyUniqueName><LevelName>Category</LevelName><UniqueName>[Case].[Category].[Category]</UniqueName></ID><ItemCaption>Category</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Case</DimensionName><HierarchyName>ID Case</HierarchyName><HierarchyUniqueName>[Case].[ID Case]</HierarchyUniqueName><LevelName>ID Case</LevelName><UniqueName>[Case].[ID Case].[ID Case]</UniqueName></ID><ItemCaption>ID Case</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Case</DimensionName><HierarchyName>Title</HierarchyName><HierarchyUniqueName>[Case].[Title]</HierarchyUniqueName><LevelName>Title</LevelName><UniqueName>[Case].[Title].[Title]</UniqueName></ID><ItemCaption>Title</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Case</DimensionName><HierarchyName>Opened Date</HierarchyName><HierarchyUniqueName>[Case].[Opened Date]</HierarchyUniqueName><LevelName>Opened Date</LevelName><UniqueName>[Case].[Opened Date].[Opened Date]</UniqueName></ID><ItemCaption>Opened Date</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Case</DimensionName><HierarchyName>Closed Date</HierarchyName><HierarchyUniqueName>[Case].[Closed Date]</HierarchyUniqueName><LevelName>Closed Date</LevelName><UniqueName>[Case].[Closed Date].[Closed Date]</UniqueName></ID><ItemCaption>Closed Date</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Case</DimensionName><HierarchyName>Project</HierarchyName><HierarchyUniqueName>[Case].[Project]</HierarchyUniqueName><LevelName>Project</LevelName><UniqueName>[Case].[Project].[Project]</UniqueName></ID><ItemCaption>Project</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Case</DimensionName><HierarchyName>Area</HierarchyName><HierarchyUniqueName>[Case].[Area]</HierarchyUniqueName><LevelName>Area</LevelName><UniqueName>[Case].[Area].[Area]</UniqueName></ID><ItemCaption>Area</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Opened Date</DimensionName><HierarchyName>Year</HierarchyName><HierarchyUniqueName>[Opened Date].[Year]</HierarchyUniqueName><LevelName>Year</LevelName><UniqueName>[Opened Date].[Year].[Year]</UniqueName></ID><ItemCaption>Year</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Opened Date</DimensionName><HierarchyName>Month Name</HierarchyName><HierarchyUniqueName>[Opened Date].[Month Name]</HierarchyUniqueName><LevelName>Month Name</LevelName><UniqueName>[Opened Date].[Month Name].[Month Name]</UniqueName></ID><ItemCaption>Month Name</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Closed Date</DimensionName><HierarchyName>Year</HierarchyName><HierarchyUniqueName>[Closed Date].[Year]</HierarchyUniqueName><LevelName>Year</LevelName><UniqueName>[Closed Date].[Year].[Year]</UniqueName></ID><ItemCaption>Year</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Level"><DimensionName>Closed Date</DimensionName><HierarchyName>Month Name</HierarchyName><HierarchyUniqueName>[Closed Date].[Month Name]</HierarchyUniqueName><LevelName>Month Name</LevelName><UniqueName>[Closed Date].[Month Name].[Month Name]</UniqueName></ID><ItemCaption>Month Name</ItemCaption><UniqueName>true</UniqueName></Item><Item><ID xsi:type="Measure"><MeasureName>Case Count</MeasureName><UniqueName>[Measures].[Case Count]</UniqueName></ID><ItemCaption>Case Count</ItemCaption><BackColor>true</BackColor><ForeColor>true</ForeColor><FontFamily>true</FontFamily><FontSize>true</FontSize><FontWeight>true</FontWeight><FontStyle>true</FontStyle><FontDecoration>true</FontDecoration><FormattedValue>true</FormattedValue><FormatString>true</FormatString></Item></Items></Select><From>FogBugz</From><Filter><FilterItems><FilterItem><HierarchyUniqueName>[Case].[Resolved By]</HierarchyUniqueName><Condition xsi:type="EqualTo"><Members><Member><MemberUniqueName>[Case].[Resolved By].&amp;[Mark Hill]</MemberUniqueName></Member></Members><Parametrized>true</Parametrized></Condition></FilterItem><FilterItem><HierarchyUniqueName>[Closed Date].[Year]</HierarchyUniqueName><Condition xsi:type="EqualTo"><Members><Member><MemberUniqueName>[Closed Date].[Year].&amp;[2016]</MemberUniqueName></Member></Members><Parametrized>true</Parametrized></Condition></FilterItem></FilterItems></Filter><Calculations /><Aggregates /><QueryProperties /></QuerySpecification><Query><Statement> SELECT NON EMPTY { [Measures].[Case Count] } ON COLUMNS, NON EMPTY { ([Case].[Resolved By].[Resolved By].ALLMEMBERS * [Case].[Milestone].[Milestone].ALLMEMBERS * [Case].[Category].[Category].ALLMEMBERS * [Case].[ID Case].[ID Case].ALLMEMBERS * [Case].[Title].[Title].ALLMEMBERS * [Case].[Opened Date].[Opened Date].ALLMEMBERS * [Case].[Closed Date].[Closed Date].ALLMEMBERS * [Case].[Project].[Project].ALLMEMBERS * [Case].[Area].[Area].ALLMEMBERS * [Opened Date].[Year].[Year].ALLMEMBERS * [Opened Date].[Month Name].[Month Name].ALLMEMBERS * [Closed Date].[Year].[Year].ALLMEMBERS * [Closed Date].[Month Name].[Month Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@ClosedDateYear, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@CaseResolvedBy, CONSTRAINED) ) ON COLUMNS FROM [FogBugz])) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement><ParameterDefinitions><ParameterDefinition><Name>CaseResolvedBy</Name><DefaultValues><DefaultValue>[Case].[Resolved By].&amp;[Mark Hill]</DefaultValue></DefaultValues><Caption>Resolved By</Caption><HierarchyUniqueName>[Case].[Resolved By]</HierarchyUniqueName><ParameterValuesQuery><Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Case].[Resolved By].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Case].[Resolved By].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Case].[Resolved By].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Case].[Resolved By].ALLMEMBERS ON ROWS FROM [FogBugz]</Statement><ParameterizedStatement><ReferencedParameters /></ParameterizedStatement></ParameterValuesQuery><MultipleValues>true</MultipleValues></ParameterDefinition><ParameterDefinition><Name>ClosedDateYear</Name><DefaultValues><DefaultValue>[Closed Date].[Year].&amp;[2016]</DefaultValue></DefaultValues><Caption>Closed Date.Year</Caption><HierarchyUniqueName>[Closed Date].[Year]</HierarchyUniqueName><ParameterValuesQuery><Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Closed Date].[Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Closed Date].[Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Closed Date].[Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Closed Date].[Year].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@CaseResolvedBy, CONSTRAINED) ) ON COLUMNS FROM [FogBugz])</Statement><ParameterizedStatement><Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Closed Date].[Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Closed Date].[Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Closed Date].[Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Closed Date].[Year].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@CaseResolvedBy, CONSTRAINED) ) ON COLUMNS FROM [FogBugz])</Statement><ReferencedParameters><ReferencedParameter><Name>CaseResolvedBy</Name></ReferencedParameter></ReferencedParameters></ParameterizedStatement></ParameterValuesQuery><MultipleValues>true</MultipleValues></ParameterDefinition></ParameterDefinitions></Query></QueryDefinition></rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Resolved_By">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Case].[Resolved By].[Resolved By]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Opened_Year">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Opened Date].[Year].[Year]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Opened_Month">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Opened Date].[Month Name].[Month Name]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Milestone">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Case].[Milestone].[Milestone]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ID_Case">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Case].[ID Case].[ID Case]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Category">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Case].[Category].[Category]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Opened_Date">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Case].[Opened Date].[Opened Date]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Closed_Date">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Case].[Closed Date].[Closed Date]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Title">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Case].[Title].[Title]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Case_Count">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Case Count]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Project">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Case].[Project].[Project]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Area">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Case].[Area].[Area]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Closed_Year">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Closed Date].[Year].[Year]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Closed_Month">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Closed Date].[Month Name].[Month Name]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

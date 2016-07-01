@@ -1,0 +1,426 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="35a4a75c-ef3f-4b5f-a0d2-38e2bf7f20a7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>FogBugz DSV</ID>
+  <Name>FogBugz DSV</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="18" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10686" scrolltop="238" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30004" y="15584" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Case" left="233" top="7242" logicalid="7" controlid="1" masterid="0" hint1="0" hint2="0" width="4323" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000e310000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Case" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="TimeTable" left="0" top="0" logicalid="8" controlid="2" masterid="0" hint1="0" hint2="0" width="3466" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c00008a0d0000ea120000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_TimeTable" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="lstKanban" left="5633" top="8802" logicalid="9" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_lstKanban" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="lstKanbanColor" left="133" top="14642" logicalid="10" controlid="4" masterid="0" hint1="0" hint2="0" width="3201" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000c0000810c000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_lstKanbanColor" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="4256" top="8792" logicalid="11" controlid="5" masterid="0" hint1="0" hint2="0" width="1677" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_dbo_lstKanban_dbo_Case]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="10" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5633" y="9191" />
+                    <point x="5095" y="9191" />
+                    <point x="5095" y="9192" />
+                    <point x="4556" y="9192" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="234" top="11942" logicalid="12" controlid="6" masterid="0" hint1="0" hint2="0" width="810" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_dbo_lstKanbanColor_dbo_Case]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="0" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="633" y="14642" />
+                    <point x="633" y="13442" />
+                    <point x="744" y="13442" />
+                    <point x="744" y="12242" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-10686</DiagramViewPortLeft>
+            <DiagramViewPortTop>238</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>FogBugz Datasource</DataSourceID>
+  <Schema>
+    <xs:schema id="FogBugz_x0020_DSV" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="FogBugz_x0020_DSV" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="24c63693-8771-4ab3-a916-de1376e7d1c1">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Case" msprop:design-time-name="e97c0457-c974-4c30-a80e-7f7f800ff598" msprop:IsLogical="True" msprop:FriendlyName="Case" msprop:DbTableName="Case" msprop:TableType="View" msprop:QueryDefinition="SELECT        IDCase, IDParentCase, Title, Status, Project, Area, Category, Priority, Milestone, AssignedTo, OpenedBy, ResolvedBy, ClosedBy, LastEditedBy, IDAssignedTo, IDOpenedBy, IDResolvedBy, IDClosedBy, &#xD;&#xA;                         IDLastEditedBy, OpenedDate, ClosedDate, ResolvedDate, DueDate, LastUpdatedDate, hrsElapsed, hrsCurrEst, hrsOrigEst, hrsElapsedExtra, IDKanban, IDKanbanColor, YEAR(OpenedDate) AS OpenedDate_Year, &#xD;&#xA;                         MONTH(OpenedDate) AS OpenedDate_Month, DATENAME([month], OpenedDate) AS OpenedDate_MonthName, 'Q' + CAST(DATEPART(quarter, OpenedDate) AS CHAR(1)) AS OpenedDate_Quarter, YEAR(ClosedDate) &#xD;&#xA;                         AS ClosedDate_Year, MONTH(ClosedDate) AS ClosedDate_Month, DATENAME([month], ClosedDate) AS ClosedDate_MonthName, 'Q' + CAST(DATEPART(quarter, ClosedDate) AS CHAR(1)) AS ClosedDate_Quarter, &#xD;&#xA;                         YEAR(ResolvedDate) AS ResolvedDate_Year, MONTH(ResolvedDate) AS ResolvedDate_Month, DATENAME([month], ResolvedDate) AS ResolvedDate_MonthName, 'Q' + CAST(DATEPART(quarter, ResolvedDate) &#xD;&#xA;                         AS CHAR(1)) AS ResolvedDate_Quarter, YEAR(DueDate) AS DueDate_Year, MONTH(DueDate) AS DueDate_Month, DATENAME([month], DueDate) AS DueDate_MonthName, 'Q' + CAST(DATEPART(quarter, DueDate) &#xD;&#xA;                         AS CHAR(1)) AS DueDate_Quarter, YEAR(LastUpdatedDate) AS LastUpdatedDate_Year, MONTH(LastUpdatedDate) AS LastUpdatedDate_Month, DATENAME([month], LastUpdatedDate) &#xD;&#xA;                         AS LastUpdatedDate_MonthName, 'Q' + CAST(DATEPART(quarter, LastUpdatedDate) AS CHAR(1)) AS LastUpdatedDate_Quarter&#xD;&#xA;FROM            [Case]" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDCase" msprop:design-time-name="16a97579-4cf4-4879-bd07-38955d7e967a" msprop:DbColumnName="IDCase" msprop:FriendlyName="IDCase" type="xs:int" minOccurs="0" />
+                  <xs:element name="IDParentCase" msprop:design-time-name="6e01446b-5174-4d0c-b6e3-046bc251402a" msprop:DbColumnName="IDParentCase" msprop:FriendlyName="IDParentCase" type="xs:int" minOccurs="0" />
+                  <xs:element name="Title" msprop:design-time-name="41505477-3013-47bd-8950-a33b91bd9cab" msprop:DbColumnName="Title" msprop:FriendlyName="Title" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Status" msprop:design-time-name="a19a561b-e4b7-403e-8703-22d2760a2440" msprop:DbColumnName="Status" msprop:FriendlyName="Status" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Project" msprop:design-time-name="c39734ad-f1b5-48dc-b998-2c0e41299114" msprop:DbColumnName="Project" msprop:FriendlyName="Project" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Area" msprop:design-time-name="22213561-3e10-4109-929f-53d0e7099a9c" msprop:DbColumnName="Area" msprop:FriendlyName="Area" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Category" msprop:design-time-name="20d4e625-da96-4805-a368-6781c328fccf" msprop:DbColumnName="Category" msprop:FriendlyName="Category" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AssignedTo" msprop:design-time-name="d03c6f23-199a-4f92-ae9a-63d151e7232d" msprop:DbColumnName="AssignedTo" msprop:FriendlyName="AssignedTo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="OpenedBy" msprop:design-time-name="9aff26b8-8c39-4614-8d71-6934529241aa" msprop:DbColumnName="OpenedBy" msprop:FriendlyName="OpenedBy" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Priority" msprop:design-time-name="cc09a7ca-0b68-4254-a827-d140813c209d" msprop:DbColumnName="Priority" msprop:FriendlyName="Priority" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="OpenedDate" msprop:design-time-name="151e6434-ef8e-4980-a9e2-d93acb22ea73" msprop:DbColumnName="OpenedDate" msprop:FriendlyName="OpenedDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ClosedDate" msprop:design-time-name="1b993273-d9df-4767-b126-5282802be059" msprop:DbColumnName="ClosedDate" msprop:FriendlyName="ClosedDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Milestone" msprop:design-time-name="7e570dff-6b2c-4a65-a09f-16dea17e4e8b" msprop:DbColumnName="Milestone" msprop:FriendlyName="Milestone" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ResolvedBy" msprop:design-time-name="34ff1352-f1a0-4954-83c7-0f8b2e6b45a1" msprop:DbColumnName="ResolvedBy" msprop:FriendlyName="ResolvedBy" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ClosedBy" msprop:design-time-name="538d48f9-3697-42f7-8baa-06ad848214e9" msprop:DbColumnName="ClosedBy" msprop:FriendlyName="ClosedBy" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LastEditedBy" msprop:design-time-name="5bc94733-3ac8-4324-8a7d-b2f26db0ede4" msprop:DbColumnName="LastEditedBy" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IDAssignedTo" msprop:design-time-name="4dea2877-6704-46eb-827a-b442ecbedc3e" msprop:DbColumnName="IDAssignedTo" type="xs:int" minOccurs="0" />
+                  <xs:element name="IDOpenedBy" msprop:design-time-name="20393781-96e8-46b7-80be-03f565899219" msprop:DbColumnName="IDOpenedBy" type="xs:int" minOccurs="0" />
+                  <xs:element name="IDResolvedBy" msprop:design-time-name="adb368ff-0455-42f9-b14c-1c71e153d268" msprop:DbColumnName="IDResolvedBy" type="xs:int" minOccurs="0" />
+                  <xs:element name="IDClosedBy" msprop:design-time-name="d95c1d63-c889-4317-b4f7-0c8ff08a829d" msprop:DbColumnName="IDClosedBy" type="xs:int" minOccurs="0" />
+                  <xs:element name="IDLastEditedBy" msprop:design-time-name="912eb3b6-2915-4fe5-b7b2-812250c4da36" msprop:DbColumnName="IDLastEditedBy" type="xs:int" minOccurs="0" />
+                  <xs:element name="ResolvedDate" msprop:design-time-name="f196ffae-396a-4fa0-8925-f99fb62d0bc0" msprop:DbColumnName="ResolvedDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="DueDate" msprop:design-time-name="fa878ce8-4890-4ea8-aad1-bca798a88e65" msprop:DbColumnName="DueDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="LastUpdatedDate" msprop:design-time-name="f7e57327-52d7-464e-a6a9-f1beb2a0dd86" msprop:DbColumnName="LastUpdatedDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="IDKanban" msprop:design-time-name="fa1d1669-70aa-4957-aa94-053a4c670546" msprop:DbColumnName="IDKanban" type="xs:int" minOccurs="0" />
+                  <xs:element name="IDKanbanColor" msprop:design-time-name="d9bc31eb-0a6b-49c0-bcbe-b37aeab46f59" msprop:DbColumnName="IDKanbanColor" type="xs:int" minOccurs="0" />
+                  <xs:element name="hrsElapsed" msprop:design-time-name="e2fdc229-087f-47e3-8a43-74086c6e4aa7" msprop:DbColumnName="hrsElapsed" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="hrsCurrEst" msprop:design-time-name="f1e18e49-f3a7-4458-bfaa-3f3b8bf95aae" msprop:DbColumnName="hrsCurrEst" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="hrsOrigEst" msprop:design-time-name="621e5e15-0cf9-482d-bf26-eafcbf93c67b" msprop:DbColumnName="hrsOrigEst" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="hrsElapsedExtra" msprop:design-time-name="13e59971-b99c-413d-ab41-a77811d6ddf5" msprop:DbColumnName="hrsElapsedExtra" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="OpenedDate_Year" msprop:design-time-name="ca7afa20-4da2-4b60-90e3-2c3ce945c1b6" msprop:DbColumnName="OpenedDate_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="OpenedDate_Month" msprop:design-time-name="c122b186-3a4f-4ea2-90c9-30fde2c28d94" msprop:DbColumnName="OpenedDate_Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="OpenedDate_MonthName" msprop:design-time-name="1a34df71-7231-4323-89e8-aaca7c948fa2" msprop:DbColumnName="OpenedDate_MonthName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ClosedDate_Year" msprop:design-time-name="b72cce3b-09af-41f1-b645-916b2dc487ff" msprop:DbColumnName="ClosedDate_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="ClosedDate_Month" msprop:design-time-name="78d70fef-ff5e-40f5-ba4b-6b6f2631c78f" msprop:DbColumnName="ClosedDate_Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="ClosedDate_MonthName" msprop:design-time-name="fe627b14-a32e-4b3d-8b09-8c99c2b6b475" msprop:DbColumnName="ClosedDate_MonthName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ResolvedDate_Year" msprop:design-time-name="249d5492-ef08-4679-9035-47ffe0519e7c" msprop:DbColumnName="ResolvedDate_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="ResolvedDate_Month" msprop:design-time-name="4a93dd3a-5351-40e6-a3ea-8320f2a5cfdc" msprop:DbColumnName="ResolvedDate_Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="ResolvedDate_MonthName" msprop:design-time-name="3c7b0d29-c252-485a-a50f-5480b2f9a69b" msprop:DbColumnName="ResolvedDate_MonthName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DueDate_Year" msprop:design-time-name="58034865-796d-446c-8938-84bc8999d36f" msprop:DbColumnName="DueDate_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="DueDate_Month" msprop:design-time-name="cb0492f7-9a08-4530-a53a-52311979cf7a" msprop:DbColumnName="DueDate_Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="DueDate_MonthName" msprop:design-time-name="6484733b-5bb7-4c65-81b2-6c800e45aae0" msprop:DbColumnName="DueDate_MonthName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LastUpdatedDate_Year" msprop:design-time-name="4af802c2-8315-428f-86a0-970982615e3e" msprop:DbColumnName="LastUpdatedDate_Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="LastUpdatedDate_Month" msprop:design-time-name="883a4f3f-be54-4567-8ae3-bc33a1a0dddc" msprop:DbColumnName="LastUpdatedDate_Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="LastUpdatedDate_MonthName" msprop:design-time-name="49965d5f-8f78-4c20-9835-e1b690347f52" msprop:DbColumnName="LastUpdatedDate_MonthName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="OpenedDate_Quarter" msprop:design-time-name="835ee899-1aed-423b-9eb4-f275fa9620f3" msprop:DbColumnName="OpenedDate_Quarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ClosedDate_Quarter" msprop:design-time-name="a3c6fd80-ac76-4686-83ea-efbec6e05325" msprop:DbColumnName="ClosedDate_Quarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ResolvedDate_Quarter" msprop:design-time-name="329fae8e-7746-431f-a4f7-7fee61076440" msprop:DbColumnName="ResolvedDate_Quarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DueDate_Quarter" msprop:design-time-name="a14ff9b0-c913-4ccc-b458-b7fa54461c25" msprop:DbColumnName="DueDate_Quarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LastUpdatedDate_Quarter" msprop:design-time-name="cf83a5cf-1ce5-4400-ade2-6a951587f784" msprop:DbColumnName="LastUpdatedDate_Quarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TimeTable" msprop:design-time-name="813e2c2e-19bf-4782-b40d-76466b14656e" msprop:FriendlyName="TimeTable" msprop:DbSchemaName="dbo" msprop:DbTableName="TimeTable" msprop:TableType="Table" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdDate" msprop:design-time-name="7407043b-571e-4b6e-a5e5-e8c53f926145" msprop:DbColumnName="IdDate" msprop:FriendlyName="IdDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Day" msprop:design-time-name="252d3d02-781a-4492-9274-88083805ceb3" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" minOccurs="0" />
+                  <xs:element name="DayofYear" msprop:design-time-name="c1887b9d-a90e-4221-b250-60ea4841b8f6" msprop:DbColumnName="DayofYear" msprop:FriendlyName="DayofYear" type="xs:int" minOccurs="0" />
+                  <xs:element name="DayofWeekName" msprop:design-time-name="c593158a-2bc9-4dde-ae8d-965e65c9173e" msprop:DbColumnName="DayofWeekName" msprop:FriendlyName="DayofWeekName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Week" msprop:design-time-name="0bbc79f7-606d-4eb4-8c8e-df1a17737c34" msprop:DbColumnName="Week" msprop:FriendlyName="Week" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:design-time-name="759f3d63-9fd1-4706-9cae-9e7fd44d4a9c" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="MonthName" msprop:design-time-name="1fc55375-de27-4cdd-8a51-8fd2d6731032" msprop:DbColumnName="MonthName" msprop:FriendlyName="MonthName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter" msprop:design-time-name="1c00a95d-4eaf-4bbe-b2a6-ac0ae1df0e91" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:design-time-name="eeb99126-48f0-4762-bf46-c133ade7621b" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_lstKanban" msprop:design-time-name="2c52c34b-d122-494a-bb64-b1b60f199bf7" msprop:FriendlyName="lstKanban" msprop:DbSchemaName="dbo" msprop:DbTableName="lstKanban" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDKanban" msprop:design-time-name="c9422656-e742-4c26-8c7c-75275bbd43c9" msprop:DbColumnName="IDKanban" msprop:FriendlyName="IDKanban" type="xs:int" />
+                  <xs:element name="KanbanStr" msprop:design-time-name="08ea498e-b7b2-4d61-af4f-b8b17f933970" msprop:DbColumnName="KanbanStr" msprop:FriendlyName="KanbanStr" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_lstKanbanColor" msprop:design-time-name="550abf8f-aef0-4ec3-9569-584dce9217ef" msprop:FriendlyName="lstKanbanColor" msprop:DbSchemaName="dbo" msprop:DbTableName="lstKanbanColor" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IDKanbanColor" msprop:design-time-name="0d2987d4-71cd-4ba2-9aaf-5ab338263d4b" msprop:DbColumnName="IDKanbanColor" msprop:FriendlyName="IDKanbanColor" type="xs:int" />
+                  <xs:element name="KanbanColorStr" msprop:design-time-name="63a20811-4759-44c1-a0ec-4cdd91f71022" msprop:DbColumnName="KanbanColorStr" msprop:FriendlyName="KanbanColorStr" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Case" />
+          <xs:field xpath="IDCase" />
+        </xs:unique>
+        <xs:unique name="dbo_TimeTable_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TimeTable" />
+          <xs:field xpath="IdDate" />
+        </xs:unique>
+        <xs:unique name="dbo_lstKanban_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_lstKanban" />
+          <xs:field xpath="IDKanban" />
+        </xs:unique>
+        <xs:unique name="dbo_lstKanbanColor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_lstKanbanColor" />
+          <xs:field xpath="IDKanbanColor" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="FK_dbo_lstKanban_dbo_Case" msdata:parent="dbo_lstKanban" msdata:child="dbo_Case" msdata:parentkey="IDKanban" msdata:childkey="IDKanban" msprop:IsLogical="True" />
+          <msdata:Relationship name="FK_dbo_lstKanbanColor_dbo_Case" msdata:parent="dbo_lstKanbanColor" msdata:child="dbo_Case" msdata:parentkey="IDKanbanColor" msdata:childkey="IDKanbanColor" msprop:IsLogical="True" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <FogBugz_x0020_DSV xmlns="" />
+  </Schema>
+</DataSourceView>

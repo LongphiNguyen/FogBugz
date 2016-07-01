@@ -7,10 +7,21 @@ import pyodbc
 from datetime import datetime
 from datetime import date
 import calendar
+import pytz
 
 # Get FogBugz API connection information
 print fbSettings.URL
 print fbSettings.TOKEN
+
+
+# --------------------------------------------------------------
+# SECTION: System settings
+# --------------------------------------------------------------
+
+
+SETTINGSFILE='fbSettings.py' # if this changes, also change the "import fbSettings" abvoe
+SERVER='PC-Longphi'
+DATABASE='FogBugz'
 
 fb = FogBugz(fbSettings.URL, fbSettings.TOKEN)
 
@@ -47,12 +58,16 @@ for filt in filters:
 # --------------------------------------------------------------
 
 
+query='edited:"' + str(fbSettings.LASTRECORDED) + '..today"'
 # SEARCH for all cases that were recently edited. These are the cases that needs their data updated.
-resp=fb.search(q='edited:"yesterday..today"', cols='ixBug,sTitle,sProject,sArea,sCategory,sPersonAssignedTo,sPriority,sStatus,dtOpened,dtClosed,ixPersonOpenedBy,ixBugParent,sFixFor,ixPersonResolvedBy,ixPersonClosedBy')
+resp=fb.search(q=query, cols='ixBug,sTitle,sProject,sArea,sCategory,sPersonAssignedTo,sPriority,sStatus,dtOpened,dtClosed,ixPersonOpenedBy,ixBugParent,sFixFor,ixPersonResolvedBy,ixPersonClosedBy,dtLastUpdated')
 
 PersonsList = {} # A dictionary of people recorded in Fogbugz. Needed because SEARCH only gives ixPerson (an ID) not the name. Then VIEWPERSON is used to get the name. This helps avoid having to search the same person multiple times.
 insertValues = [] # A list of tuples, where tuples are the case's information, to be inserted or updated into dbo.Case.
 insertDates = set() # A set of dates to insert into dbo.TimeTable
+maxDate = datetime.strptime(fbSettings.LASTRECORDED,'%Y-%m-%d %H:%M:%SZ')
+print "previous update time = "
+print maxDate
 
 # Go through each case and get its information. Clean up the data along the way.
 for case in resp.cases.childGenerator():
@@ -92,18 +107,24 @@ for case in resp.cases.childGenerator():
         
     # get Date Closed
     StrDtClosed = ''
-    if case.dtclosed.string is not None:
+    if case.dtclosed.string is not None: # insert closed date and opened date
         StrDtClosed = datetime.strptime(case.dtclosed.string,'%Y-%m-%dT%H:%M:%SZ')
         insertDates.update([datetime.strptime(case.dtopened.string,'%Y-%m-%dT%H:%M:%SZ').strftime('%Y%m%d'), datetime.strptime(case.dtclosed.string,'%Y-%m-%dT%H:%M:%SZ').strftime('%Y%m%d')])
-    else:
+    else: # only insert opened date since closed date was empty
         StrDtClosed = None
-        insertDates.update([datetime.strptime(case.dtopened.string,'%Y-%m-%dT%H:%M:%SZ').strftime('%Y%m%d')])
+        insertDates.update([datetime.strptime(case.dtopened.string,'%Y-%m-%dT%H:%M:%SZ')])
 
     # get Parent Case
     StrParentCase = case.ixbugparent.string
     if StrParentCase == '0':
         StrParentCase = None
 
+    if case.dtlastupdated.string is not None:
+        DtLastUpdate = datetime.strptime(case.dtlastupdated.string, '%Y-%m-%dT%H:%M:%SZ')
+        
+        if DtLastUpdate > maxDate:
+            maxDate=DtLastUpdate
+    
     # return IDcase, IDParentCase, Title, Project, Area, Category, AssignedTo, Priority, Status, OpenedDate, ClosedDate, OpenedBy, Milestone, ResolvedBy, ClosedBy
     insertValues.append((case['ixbug'], StrParentCase, case.stitle.string, case.sproject.string, case.sarea.string, case.scategory.string, case.spersonassignedto.string, case.spriority.string, case.sstatus.string, datetime.strptime(case.dtopened.string,'%Y-%m-%dT%H:%M:%SZ'), StrDtClosed, StrOpenedBy, case.sfixfor.string, StrResolvedBy, StrClosedBy))
 
@@ -114,8 +135,6 @@ for case in resp.cases.childGenerator():
 
 
 # Connect to the database
-SERVER='PC-Longphi'
-DATABASE='FogBugz'
 conn = pyodbc.connect('DRIVER={SQL Server};SERVER='+SERVER+ ';DATABASE='+DATABASE)
 cursor = conn.cursor()
 
@@ -162,6 +181,23 @@ for CaseID, index in CaseIDs:
 
 cursor.close()
 conn.close()
+
+
+# --------------------------------------------------------------
+# SECTION: Update fbSettings to tell it the latest case that was looked at.
+# --------------------------------------------------------------
+
+
+with open(SETTINGSFILE, 'r') as file:
+    data=file.readlines()
+
+data[2] = 'LASTRECORDED="' + str(maxDate.replace(second=0,microsecond=0).strftime('%Y-%m-%d %H:%M:%SZ')) + '"'
+
+print "last update time = "
+print maxDate
+
+with open(SETTINGSFILE, 'w') as file:
+    file.writelines(data)
 
 '''
 # get all newly OPENED cases

@@ -1,0 +1,1595 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="07732023-0ae7-4983-9edc-a237ea17c486" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Case</ID>
+  <Name>Case</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="17" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-659" scrolltop="-11932" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="14261" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="lstKanban" left="240" top="7400" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_lstKanban" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="lstKanbanColor" left="5860" top="1560" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3175" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000670c000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_lstKanbanColor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Case" left="20" top="0" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="5028" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000a413000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Case" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="241" top="4700" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="943" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_lstKanban_dbo_Case]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="0" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="640" y="7400" />
+              <point x="640" y="6200" />
+              <point x="884" y="6200" />
+              <point x="884" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4748" top="1550" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="1412" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_lstKanbanColor_dbo_Case]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="10" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5860" y="1949" />
+              <point x="5454" y="1949" />
+              <point x="5454" y="1950" />
+              <point x="5048" y="1950" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="TimeTable" left="1006" top="-6932" logicalid="12" controlid="7" masterid="0" hint1="0" hint2="0" width="3413" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000550d0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_TimeTable" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-659</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-11932</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-6932</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="145">
+            <Shape Id="ID Case" Expanded="true">
+              <Attributes>
+                <Attribute Id="ID Case" />
+                <Attribute Id="Area" />
+                <Attribute Id="Assigned To" />
+                <Attribute Id="Category" />
+                <Attribute Id="Closed By" />
+                <Attribute Id="ID Assigned To" />
+                <Attribute Id="ID Closed By" />
+                <Attribute Id="ID Last Edited By" />
+                <Attribute Id="ID Opened By" />
+                <Attribute Id="ID Parent Case" />
+                <Attribute Id="ID Resolved By" />
+                <Attribute Id="Last Edited By" />
+                <Attribute Id="Milestone" />
+                <Attribute Id="Opened By" />
+                <Attribute Id="Priority" />
+                <Attribute Id="Project" />
+                <Attribute Id="Resolved By" />
+                <Attribute Id="Status" />
+                <Attribute Id="Title" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="ID Kanban Color" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID Kanban Color" />
+                <Attribute Id="Kanban Color Str" />
+              </Attributes>
+              <Position x="206" y="20" />
+            </Shape>
+            <Shape Id="ID Kanban" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID Kanban" />
+                <Attribute Id="Kanban Str" />
+              </Attributes>
+              <Position x="206" y="68" />
+            </Shape>
+            <Shape Id="Last Updated Date" Expanded="false">
+              <Attributes>
+                <Attribute Id="Last Updated Date" />
+              </Attributes>
+              <Position x="206" y="116" />
+            </Shape>
+            <Shape Id="Last Updated Date Month Name" Expanded="true">
+              <Attributes>
+                <Attribute Id="Last Updated Date Month Name" />
+                <Attribute Id="Last Updated Date Month" />
+              </Attributes>
+              <Position x="392" y="116" />
+            </Shape>
+            <Shape Id="Last Updated Date Quarter" Expanded="false">
+              <Attributes>
+                <Attribute Id="Last Updated Date Quarter" />
+              </Attributes>
+              <Position x="578" y="116" />
+            </Shape>
+            <Shape Id="Last Updated Date Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Last Updated Date Year" />
+              </Attributes>
+              <Position x="765" y="116" />
+            </Shape>
+            <Shape Id="Due Date" Expanded="false">
+              <Attributes>
+                <Attribute Id="Due Date" />
+              </Attributes>
+              <Position x="206" y="188" />
+            </Shape>
+            <Shape Id="Due Date Month Name" Expanded="true">
+              <Attributes>
+                <Attribute Id="Due Date Month Name" />
+                <Attribute Id="Due Date Month" />
+              </Attributes>
+              <Position x="392" y="188" />
+            </Shape>
+            <Shape Id="Due Date Quarter" Expanded="false">
+              <Attributes>
+                <Attribute Id="Due Date Quarter" />
+              </Attributes>
+              <Position x="578" y="188" />
+            </Shape>
+            <Shape Id="Due Date Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Due Date Year" />
+              </Attributes>
+              <Position x="765" y="188" />
+            </Shape>
+            <Shape Id="Resolved Date" Expanded="false">
+              <Attributes>
+                <Attribute Id="Resolved Date" />
+              </Attributes>
+              <Position x="206" y="260" />
+            </Shape>
+            <Shape Id="Resolved Date Month Name" Expanded="true">
+              <Attributes>
+                <Attribute Id="Resolved Date Month Name" />
+                <Attribute Id="Resolved Date Month" />
+              </Attributes>
+              <Position x="392" y="260" />
+            </Shape>
+            <Shape Id="Resolved Date Quarter" Expanded="false">
+              <Attributes>
+                <Attribute Id="Resolved Date Quarter" />
+              </Attributes>
+              <Position x="578" y="260" />
+            </Shape>
+            <Shape Id="Resolved Date Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Resolved Date Year" />
+              </Attributes>
+              <Position x="765" y="260" />
+            </Shape>
+            <Shape Id="Closed Date" Expanded="false">
+              <Attributes>
+                <Attribute Id="Closed Date" />
+              </Attributes>
+              <Position x="206" y="332" />
+            </Shape>
+            <Shape Id="Closed Date Month Name" Expanded="true">
+              <Attributes>
+                <Attribute Id="Closed Date Month Name" />
+                <Attribute Id="Closed Date Month" />
+              </Attributes>
+              <Position x="392" y="332" />
+            </Shape>
+            <Shape Id="Closed Date Quarter" Expanded="false">
+              <Attributes>
+                <Attribute Id="Closed Date Quarter" />
+              </Attributes>
+              <Position x="578" y="332" />
+            </Shape>
+            <Shape Id="Closed Date Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Closed Date Year" />
+              </Attributes>
+              <Position x="765" y="332" />
+            </Shape>
+            <Shape Id="Opened Date" Expanded="false">
+              <Attributes>
+                <Attribute Id="Opened Date" />
+              </Attributes>
+              <Position x="206" y="404" />
+            </Shape>
+            <Shape Id="Opened Date Month Name" Expanded="true">
+              <Attributes>
+                <Attribute Id="Opened Date Month Name" />
+                <Attribute Id="Opened Date Month" />
+              </Attributes>
+              <Position x="392" y="404" />
+            </Shape>
+            <Shape Id="Opened Date Quarter" Expanded="false">
+              <Attributes>
+                <Attribute Id="Opened Date Quarter" />
+              </Attributes>
+              <Position x="578" y="404" />
+            </Shape>
+            <Shape Id="Opened Date Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Opened Date Year" />
+              </Attributes>
+              <Position x="765" y="404" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="044572dd-108f-425b-b269-6cf89d202df3">
+    <DataSourceViewID>FogBugz DSV</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="aa13ce45-51f5-455e-b870-d7d71d4fa35d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="376a0705-ff18-4a4e-8254-cdb4aa970e00">
+      <ID>ID Case</ID>
+      <Name>ID Case</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c37c92c-4f2a-47ff-909d-5465925ce588">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="da4f42ba-2a29-4f5d-bc4c-1dbb89e26855">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDCase</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="90b2d14b-64b1-47a2-884b-5329574e4e1a">
+          <AttributeID>ID Parent Case</AttributeID>
+          <Name>ID Parent Case</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3233d910-abf7-4352-bf24-8023fbefcf2a">
+          <AttributeID>Title</AttributeID>
+          <Name>Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3b25e788-5665-407a-8813-852815292229">
+          <AttributeID>Status</AttributeID>
+          <Name>Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cec98f45-5ea5-4f22-b5b9-07f1ecb10e6d">
+          <AttributeID>Project</AttributeID>
+          <Name>Project</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1d36e53c-ebd5-4211-a134-15a1fcb1b533">
+          <AttributeID>Area</AttributeID>
+          <Name>Area</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e58c07e4-3fd1-4659-8f44-e027561668c3">
+          <AttributeID>Category</AttributeID>
+          <Name>Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a2ed631c-282e-4f8d-b37b-b44646215417">
+          <AttributeID>Opened By</AttributeID>
+          <Name>Opened By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fbb581c0-3a6d-431f-bea3-8444b0a1995a">
+          <AttributeID>Priority</AttributeID>
+          <Name>Priority</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="def2f2a2-92e1-4dae-8ec0-03966bcc6b0c">
+          <AttributeID>Milestone</AttributeID>
+          <Name>Milestone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f90e355d-1fe1-4d87-9085-0e3a2fc74569">
+          <AttributeID>Resolved By</AttributeID>
+          <Name>Resolved By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3b328f0d-005e-401d-97f7-0b8a2399609a">
+          <AttributeID>Closed By</AttributeID>
+          <Name>Closed By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="91168d6c-4918-4279-9cc0-49442a12ff21">
+          <AttributeID>Last Edited By</AttributeID>
+          <Name>Last Edited By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0935cd0e-cb3b-4c7e-bc2d-3e584ff27f81">
+          <AttributeID>ID Assigned To</AttributeID>
+          <Name>ID Assigned To</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="169a1ef4-0c14-4d27-997a-578152e79420">
+          <AttributeID>ID Opened By</AttributeID>
+          <Name>ID Opened By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d292deec-a37c-45f5-bfba-7b36880ca7ba">
+          <AttributeID>ID Resolved By</AttributeID>
+          <Name>ID Resolved By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c631a48d-7347-46e2-8e14-b933bae38f8a">
+          <AttributeID>ID Closed By</AttributeID>
+          <Name>ID Closed By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="933aa307-6ef3-43d4-8db5-4c74a50bb332">
+          <AttributeID>ID Last Edited By</AttributeID>
+          <Name>ID Last Edited By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="85a97e70-8da4-4bab-893f-796cb152afe1">
+          <AttributeID>Opened Date</AttributeID>
+          <Name>Opened Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="626db428-3933-4559-8b24-e0e9c042f914">
+          <AttributeID>Closed Date</AttributeID>
+          <Name>Closed Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="89c6a300-9e2f-47bb-850d-ce31c3572dd9">
+          <AttributeID>Resolved Date</AttributeID>
+          <Name>Resolved Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5f29910d-3dd7-4623-a628-30e06371b9df">
+          <AttributeID>Due Date</AttributeID>
+          <Name>Due Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="490ecb86-3798-4ca4-bf0f-6c48e5dfa9ca">
+          <AttributeID>Last Updated Date</AttributeID>
+          <Name>Last Updated Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6a75ecb6-16c7-41ab-a68d-d586794f7b88">
+          <AttributeID>ID Kanban</AttributeID>
+          <Name>ID Kanban</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2bc24090-b9d4-4488-b081-404740623854">
+          <AttributeID>ID Kanban Color</AttributeID>
+          <Name>ID Kanban Color</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="025b852b-5bda-4da3-807c-f86697c0399a">
+          <AttributeID>Assigned To</AttributeID>
+          <Name>Assigned To</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d69703c8-fac8-4947-8890-e1e6e03a45b9">
+      <ID>ID Parent Case</ID>
+      <Name>ID Parent Case</Name>
+      <Usage>Parent</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9038e1e8-aeec-479d-b44b-96e5add16aa3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d5aa5b9d-cb5b-45b9-be38-1f70c4056d5d">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDParentCase</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <MembersWithData>NonLeafDataHidden</MembersWithData>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="342079e3-a755-4f93-a34d-9a03afcf426d">
+      <ID>Title</ID>
+      <Name>Title</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b36bbc28-2e70-4aa5-ac2c-d37ae57cb4ce">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="da6ca46e-e1c1-43fb-a260-77325ef7dc10">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="334051d2-5ebd-4cf8-96ef-01ab1e792b6b">
+      <ID>Status</ID>
+      <Name>Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="80aee6b7-f8e0-464b-840b-d7a0eebe66c8">
+          <DataType>WChar</DataType>
+          <DataSize>70</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1419a984-358a-483d-98b0-f5acf11c51e0">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8f6ed0a6-ca22-4b41-91da-20193a4f18d4">
+      <ID>Project</ID>
+      <Name>Project</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c63b5c8b-3e45-45bf-97ea-46331cba9a13">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="74d9c29b-7eaa-4633-811b-31ea21646640">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Project</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="25feeaf9-2d25-4144-9571-6fc41566cef8">
+      <ID>Area</ID>
+      <Name>Area</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3d167b69-d5aa-4518-97a8-5a157f0426c7">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b39491e-a11c-4498-a090-bb25450acc1d">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Area</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0ed654b-8119-4519-8396-679bb817066c">
+      <ID>Category</ID>
+      <Name>Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fdd773a1-4c4e-45a6-b732-075ae46b0df1">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d516f397-fe6b-405d-9cd1-c3fc35cdc2ab">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Category</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="17aaadd5-359c-4652-ae00-11b2ee5b212e">
+      <ID>Assigned To</ID>
+      <Name>Assigned To</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="328ad9c3-1af7-4fc6-8205-5d8dbeede883">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85db48ac-82d2-4660-80b1-9faf5202a772">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDAssignedTo</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ab47143c-e75c-48de-991a-aedf98a7ba0a">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="230903d3-f7db-43ef-8735-2f5dcdef8e29">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>AssignedTo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c3cc2883-0571-4a71-8db8-55b54ca644b9">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b0aba688-6510-46a1-bc2b-6952c3a18769">
+          <TableID>dbo_Case</TableID>
+          <ColumnID>AssignedTo</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9fe06d9c-008b-48ce-b1a9-5fcf1a87b062">
+      <ID>Opened By</ID>
+      <Name>Opened By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9d563163-9bc0-48a4-91bc-6512a3b7023b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62e326e1-84fb-4fb7-a8fe-ca76679888b0">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDOpenedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c9d236c6-f3e3-480a-9326-4b9c26517236">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b5ef928-dd48-462c-9c29-494900e9e2e8">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>OpenedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="02d70ce6-5de0-42f0-99d3-9412ff70a48d">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8827ed2e-8023-4965-942a-0ddb47c665da">
+          <TableID>dbo_Case</TableID>
+          <ColumnID>OpenedBy</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fbd6433d-5da6-4d1d-8676-7132084fdc67">
+      <ID>Priority</ID>
+      <Name>Priority</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="61e62c94-dc2a-4e6a-8c7d-6f45e6f0767f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa1006c8-8351-4bbd-b070-2f5faa1d66d0">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Priority</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3c9c9b06-a179-4d7c-86da-1f0151cfe34f">
+      <ID>Milestone</ID>
+      <Name>Milestone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1afec73b-6569-4f5e-83d8-9bd68335774c">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c55c402b-4665-4bfd-8364-7f0f8795804f">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>Milestone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4d3227c6-8172-499d-9e24-9d0ee8c9753d">
+      <ID>Resolved By</ID>
+      <Name>Resolved By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2f96855f-8a88-4279-be4e-2a4752f6b7e6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1974cf8-147d-4e6a-9a88-62f7c298574c">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDResolvedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="911d64a3-346f-44b4-823e-39f2062d7c2e">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="739e2076-2e90-4db5-b31b-f7223e386fdc">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ResolvedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d888cd4f-5355-479a-8ce1-70f6dac393bd">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="aec6ebaf-4807-489a-aa10-9d4ed2a98cc3">
+          <TableID>dbo_Case</TableID>
+          <ColumnID>ResolvedBy</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8fde5196-dab9-4661-a2e8-d63f32655193">
+      <ID>Closed By</ID>
+      <Name>Closed By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4805c4fe-123e-44b3-a8ac-db20c4262c4d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="192dfee8-302b-40df-aa0d-725f88204dc9">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDClosedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="10772845-ace7-4e1d-8078-ca775b30fdc0">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3687c865-e544-4198-9e7e-2b78860d1724">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ClosedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="89977e51-70f2-4e36-99de-896383c5548d">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f9dc038a-582d-4f23-8982-704c8b2d7986">
+          <TableID>dbo_Case</TableID>
+          <ColumnID>ClosedBy</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="64c4bda5-f730-42e6-84ed-7b884b818553">
+      <ID>Last Edited By</ID>
+      <Name>Last Edited By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4bd12089-b877-4f50-8599-6b30b09f5859">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bf24b178-8ad7-471f-9e25-5b1b96ddf23b">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDLastEditedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f10c8740-0e74-4990-a10e-cc6644c28c3d">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a7ec96c-bf73-4a64-b201-5120045a0643">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>LastEditedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="96de4f18-9766-460f-97b4-3e5524f18322">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3c1be923-6d0b-45c8-bc3f-750e1dcdd471">
+          <TableID>dbo_Case</TableID>
+          <ColumnID>LastEditedBy</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="94b891ef-5ea4-4aae-b558-fd5280800a9e">
+      <ID>ID Assigned To</ID>
+      <Name>ID Assigned To</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e42a8eab-bbe7-4622-9760-619a417c1cdd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c03785f-e991-4997-b515-803a0d9f3694">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDAssignedTo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4caa7099-3c5b-4ee5-97c6-b512f81a06e5">
+      <ID>ID Opened By</ID>
+      <Name>ID Opened By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ebccc664-1110-408c-91f3-04376af81da7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7969d84d-d5db-46ea-b013-65ef420f4890">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDOpenedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="76090f15-c550-4947-aff4-53960f4a1e30">
+      <ID>ID Resolved By</ID>
+      <Name>ID Resolved By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6669c410-691e-468f-ac63-53bd02d005a0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db4d86d8-a8ac-40fa-9fc0-52ada5d536d2">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDResolvedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f55f7126-aea0-44e2-bd08-8f5eb7950db1">
+      <ID>ID Closed By</ID>
+      <Name>ID Closed By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="78971416-e4dd-4424-8932-dd7ead2fb382">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dda2b4a6-5d0b-4e9e-80ee-c7f18ab3d6d7">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDClosedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b0c7d442-2b9f-42a1-8ad2-51db096bdee2">
+      <ID>ID Last Edited By</ID>
+      <Name>ID Last Edited By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="53bbf381-a8fc-4399-a8d3-3412162801cc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed378931-916d-4418-9cb9-99af7e466675">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>IDLastEditedBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6fe26bae-5610-428a-a9ab-a6e43aa60d3c">
+      <ID>Opened Date</ID>
+      <Name>Opened Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cf9c2286-4210-424c-ae63-d8183886cb9e">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7390b924-53b0-4d78-a15d-e4c1db112508">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>OpenedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="838da7ae-fbe8-4608-af83-a26536c8f458">
+          <AttributeID>Opened Date Month Name</AttributeID>
+          <Name>Opened Date Month Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6b0f7114-7908-4527-a67b-2627ac286f91">
+      <ID>Closed Date</ID>
+      <Name>Closed Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b19d5dc3-2099-42f8-a215-000da9245f20">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e7c2451-6d26-4a7d-8a96-323afbc19091">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ClosedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="413b2ec0-d78a-451b-9b15-4b56395fbe24">
+          <AttributeID>Closed Date Month Name</AttributeID>
+          <Name>Closed Date Month Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="900873e4-deba-4b80-8e24-7bd1c740d329">
+      <ID>Resolved Date</ID>
+      <Name>Resolved Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2f66672d-1406-4a4e-8a44-6f067834091e">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b3231b8-3fd5-4ba2-a9f9-3a0f87ea8d14">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ResolvedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="bd5e8a85-b1d2-403a-b095-23361323e2c2">
+          <AttributeID>Resolved Date Month Name</AttributeID>
+          <Name>Resolved Date Month Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="949987a4-27bd-4c19-b114-e71b309523aa">
+      <ID>Due Date</ID>
+      <Name>Due Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7c2b66bb-94b2-453b-8cce-eef78b197874">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00084b91-6689-4d7e-8b8b-f27af3126b83">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>DueDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7c5ea4e2-ef87-47b6-ab4c-3cc5c6435cba">
+          <AttributeID>Due Date Month Name</AttributeID>
+          <Name>Due Date Month Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="28b36347-abe5-46d8-895d-11d07287beb0">
+      <ID>Last Updated Date</ID>
+      <Name>Last Updated Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cba3672d-851a-478f-9faa-389fec212311">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="da962d04-a393-4941-987c-e0fc7472c025">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>LastUpdatedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a1f153d6-a0e1-44f2-8cbe-2c9e3d987ff7">
+          <AttributeID>Last Updated Date Month Name</AttributeID>
+          <Name>Last Updated Date Month Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c2b50622-6d77-41f3-8af9-489332650439">
+      <ID>ID Kanban</ID>
+      <Name>ID Kanban</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2fcd68ad-bdf7-41e2-a591-368c8eb06c3a">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2367f7b9-89c1-4bb0-9399-74b24b54892e">
+            <TableID>dbo_lstKanban</TableID>
+            <ColumnID>IDKanban</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5a3f8615-f49f-41fb-bf35-a299a7fca4bb">
+          <AttributeID>Kanban Str</AttributeID>
+          <Name>Kanban Str</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4843badf-ac66-4ffe-b8ff-a5eb73e3a996">
+      <ID>Kanban Str</ID>
+      <Name>Kanban Str</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ca92829-ea3f-4fdb-8e63-305c4edb0fe1">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="06214248-2476-4817-be96-cfb1d8c6d9c8">
+            <TableID>dbo_lstKanban</TableID>
+            <ColumnID>KanbanStr</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3ad031d8-482d-4d25-a022-0d24097c3ff4">
+      <ID>ID Kanban Color</ID>
+      <Name>ID Kanban Color</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb66e245-23e1-4067-b678-bc5dff6b2c3b">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="838e828c-1359-49a4-8e55-af25b9f52f97">
+            <TableID>dbo_lstKanbanColor</TableID>
+            <ColumnID>IDKanbanColor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="731ba963-9aa0-4ed6-95c3-33a8510f5d7b">
+          <AttributeID>Kanban Color Str</AttributeID>
+          <Name>Kanban Color Str</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2df305cf-1469-42b4-857e-55e8d0e7cc72">
+      <ID>Kanban Color Str</ID>
+      <Name>Kanban Color Str</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1a128414-41b3-455f-a480-d5c4f17a0cdf">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9cc9bfed-7a2d-44c0-a891-cf68ef5a7876">
+            <TableID>dbo_lstKanbanColor</TableID>
+            <ColumnID>KanbanColorStr</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="93e3631b-d232-47c8-bc66-9c63520e7c1e">
+      <ID>Opened Date Year</ID>
+      <Name>Opened Date Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="30268e2e-6bc4-4393-868f-8dbc88ef1172">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b408fbd5-8d1a-4943-a435-52ef971a7ab9">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>OpenedDate_Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0ebecd7b-07ef-47a3-b834-464c61892ea3">
+      <ID>Opened Date Month</ID>
+      <Name>Opened Date Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4f3ea5bc-23bf-4bf1-81cb-ee6be05356b8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b1b15a5-5698-4a42-99d3-ac944382f118">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>OpenedDate_Month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyOrdered>false</AttributeHierarchyOrdered>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyOptimizedState>NotOptimized</AttributeHierarchyOptimizedState>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="feab473c-3c23-4d88-91bd-be67086fad3b">
+      <ID>Opened Date Month Name</ID>
+      <Name>Opened Date Month Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4e8d108e-7757-45c3-a6f4-26fd7650274f">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa37562b-afad-45c0-a0b4-c350ecaceaff">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>OpenedDate_MonthName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6e8b8d48-a1e8-4a4d-b270-7643598fe91c">
+          <AttributeID>Opened Date Quarter</AttributeID>
+          <Name>Opened Date Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="936ec2d4-973d-4ef4-86c9-6a9321a5061b">
+          <AttributeID>Opened Date Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Opened Date Month</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Opened Date Month</OrderByAttributeID>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d0e94095-d623-40db-bd7b-758d6a760308">
+      <ID>Closed Date Year</ID>
+      <Name>Closed Date Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1a868eb8-3334-4f7c-a0d5-0a73ac6f4bea">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95ff41f1-bcf9-4554-9c34-68780b2d8a34">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ClosedDate_Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="389f3715-ea06-4f37-891d-95704bd5a310">
+      <ID>Closed Date Month</ID>
+      <Name>Closed Date Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a80a3c6d-f605-46ab-a319-0807e077d741">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f99ff2b-c087-4a18-b5a3-4f4ae30d9a8c">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ClosedDate_Month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyOrdered>false</AttributeHierarchyOrdered>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyOptimizedState>NotOptimized</AttributeHierarchyOptimizedState>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0062537-4948-40aa-be5f-1a501fff23e1">
+      <ID>Closed Date Month Name</ID>
+      <Name>Closed Date Month Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="14936753-1d02-420e-b6d8-2bc82b94128c">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bff08259-d9eb-48ef-8fa3-5dca97c589e2">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ClosedDate_MonthName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="820c57bd-a5a4-475d-ae8a-05933992b599">
+          <AttributeID>Closed Date Quarter</AttributeID>
+          <Name>Closed Date Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="afe16963-e0aa-4693-a67f-ecf51bc3a6da">
+          <AttributeID>Closed Date Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Closed Date Month</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Closed Date Month</OrderByAttributeID>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b1175323-1619-4550-bf11-ae8b195f694f">
+      <ID>Resolved Date Year</ID>
+      <Name>Resolved Date Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8d4a9bfe-f76f-4135-8680-14acc01070c0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66dd96f9-418e-4c8e-9692-d7649a1e6c72">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ResolvedDate_Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8f157cdb-26fa-42af-ab0d-35af46904c9a">
+      <ID>Resolved Date Month</ID>
+      <Name>Resolved Date Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a73c527d-6ff2-49ca-aa5d-a2fbe688439f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c47215b2-1fcd-461a-b54e-d326f0fd0817">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ResolvedDate_Month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyOrdered>false</AttributeHierarchyOrdered>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyOptimizedState>NotOptimized</AttributeHierarchyOptimizedState>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="258ba89e-d033-416d-8e45-7c8e7cca2368">
+      <ID>Resolved Date Month Name</ID>
+      <Name>Resolved Date Month Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9f249d3d-df80-4981-8ea6-6621e876d6fd">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5660dbdf-9b6f-406f-9727-5932529c3d4b">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ResolvedDate_MonthName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b4c44433-3db1-475a-9b00-51940f455d25">
+          <AttributeID>Resolved Date Quarter</AttributeID>
+          <Name>Resolved Date Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="deac4010-3a51-46c8-b57a-9376a5b1c8af">
+          <AttributeID>Resolved Date Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Resolved Date Month</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Resolved Date Month</OrderByAttributeID>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac8784bc-ef5c-41fb-9cd1-dc70ac44f99a">
+      <ID>Due Date Year</ID>
+      <Name>Due Date Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a4d8924-2931-4b59-a962-31b7d4547097">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a58b648-d758-467c-ab7c-1e4da5904404">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>DueDate_Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e179641-ba90-41f6-83b3-7f46e0abd3c7">
+      <ID>Due Date Month</ID>
+      <Name>Due Date Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46dedab5-8f51-4f46-92ce-8081f85645b7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="107e1b67-1186-4d26-9517-13124ec30582">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>DueDate_Month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyOrdered>false</AttributeHierarchyOrdered>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyOptimizedState>NotOptimized</AttributeHierarchyOptimizedState>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="25555261-31f5-44d6-b5a0-9d91db123dd0">
+      <ID>Due Date Month Name</ID>
+      <Name>Due Date Month Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b6a2f149-599a-4a2b-accb-cad2650dcfc8">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5460b0c6-5121-4881-878b-49c7880b373c">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>DueDate_MonthName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="79ad8270-57dd-4637-a9c5-0838147af6b5">
+          <AttributeID>Due Date Quarter</AttributeID>
+          <Name>Due Date Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="30a333fa-a875-4813-8648-074986d5d3be">
+          <AttributeID>Due Date Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Due Date Month</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Due Date Month</OrderByAttributeID>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="10a2f5d2-5fed-48dc-a2a8-d7418228a4e9">
+      <ID>Last Updated Date Year</ID>
+      <Name>Last Updated Date Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60cc41b3-86fd-40e5-8548-8339404bcfbf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5048ebc8-fdbe-4a73-ba6c-bdb3ba849c7e">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>LastUpdatedDate_Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9bfe7d80-b156-4ea3-b45c-72e22399cd61">
+      <ID>Last Updated Date Month</ID>
+      <Name>Last Updated Date Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c22b4412-81cd-43ab-8e57-79e22282f0b8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="89b3b0cf-6a1e-4062-9dd7-e46d71329e5b">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>LastUpdatedDate_Month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyOrdered>false</AttributeHierarchyOrdered>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyOptimizedState>NotOptimized</AttributeHierarchyOptimizedState>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1ec9a664-6062-4afb-93a1-7939d43945c5">
+      <ID>Last Updated Date Month Name</ID>
+      <Name>Last Updated Date Month Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f1c4e582-ab88-4d57-9d9e-951197790e80">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="030d6a1a-f6d9-4495-82c3-641866f56486">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>LastUpdatedDate_MonthName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f8b1424e-2067-4375-93c0-9f6d92ab4a77">
+          <AttributeID>Last Updated Date Quarter</AttributeID>
+          <Name>Last Updated Date Quarter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f49d58c7-4cdb-4251-970c-27a5165eb3f0">
+          <AttributeID>Last Updated Date Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Last Updated Date Month</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Last Updated Date Month</OrderByAttributeID>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bd30e9d4-2661-4612-bc35-9cf917797cf5">
+      <ID>Opened Date Quarter</ID>
+      <Name>Opened Date Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae35a67f-809c-46ae-825a-f9a46edaea13">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df01de7e-8b12-420d-be87-bc99f47d3d87">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>OpenedDate_Quarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="39ce858d-3bea-4f80-85b2-0e9ec8edae56">
+          <AttributeID>Opened Date Year</AttributeID>
+          <Name>Opened Date Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8bd436ec-8d26-4881-a0b0-6b563385f680">
+      <ID>Closed Date Quarter</ID>
+      <Name>Closed Date Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc778e68-489b-4f66-bc29-f357637615b4">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e4d9b5ef-eaf2-48fe-9c23-41ee7e33349a">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ClosedDate_Quarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3bea7045-06bb-40be-b379-e2b6bffb0547">
+          <AttributeID>Closed Date Year</AttributeID>
+          <Name>Closed Date Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="135bab68-bdf7-4d10-9300-d391bd1f3b4b">
+      <ID>Resolved Date Quarter</ID>
+      <Name>Resolved Date Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2e2e7ac6-21be-4a1d-9822-6b79bc882b01">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e32a69c-0fdd-4cc8-8701-58ca56fea10b">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>ResolvedDate_Quarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d1868534-7d5b-4a62-b1cf-68db6413737b">
+          <AttributeID>Resolved Date Year</AttributeID>
+          <Name>Resolved Date Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="116ed194-52c3-4121-8473-b78771941cac">
+      <ID>Due Date Quarter</ID>
+      <Name>Due Date Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1b7974f0-5c89-440c-855e-c26a2f0733e4">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8aebbd49-d873-41dc-941c-03d956c122e7">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>DueDate_Quarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3f27f5ee-3df9-40fb-b0f1-d89f009590dd">
+          <AttributeID>Due Date Year</AttributeID>
+          <Name>Due Date Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="614ee458-01a6-4c32-a898-64d823bceb43">
+      <ID>Last Updated Date Quarter</ID>
+      <Name>Last Updated Date Quarter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="51faf081-8047-4917-84a2-660ccfa4e889">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb453970-3cf2-4584-ac82-6ecd29abbf40">
+            <TableID>dbo_Case</TableID>
+            <ColumnID>LastUpdatedDate_Quarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="141f9514-3af1-4f4a-b658-bcf78f0f3174">
+          <AttributeID>Last Updated Date Year</AttributeID>
+          <Name>Last Updated Date Year</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c810cca7-e2ae-43cc-a518-8e00104b96de">
+      <ID>Hierarchy</ID>
+      <Name>Date Closed</Name>
+      <Levels>
+        <Level dwd:design-time-name="d7dc0d15-a91e-4916-9ba3-eb3870b28e50">
+          <ID>Closed Date Year</ID>
+          <Name>Closed Date Year</Name>
+          <SourceAttributeID>Closed Date Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="89c2b3b1-2473-4713-9607-77fb97ffadac">
+          <ID>Closed Date Quarter</ID>
+          <Name>Closed Date Quarter</Name>
+          <SourceAttributeID>Closed Date Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6fccaed2-5304-46f7-993f-96dc99480084">
+          <ID>Closed Date Month Name</ID>
+          <Name>Closed Date Month Name</Name>
+          <SourceAttributeID>Closed Date Month Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="72f21933-a948-4f84-9759-6fae9746d559">
+          <ID>Closed Date</ID>
+          <Name>Closed Date</Name>
+          <SourceAttributeID>Closed Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="5ee38cc7-7937-4249-aa4f-4817f098c9d4">
+      <ID>Hierarchy 1</ID>
+      <Name>Date Due</Name>
+      <Levels>
+        <Level dwd:design-time-name="43e5257a-605c-4a07-8abf-e2b7419666a0">
+          <ID>Due Date Year</ID>
+          <Name>Due Date Year</Name>
+          <SourceAttributeID>Due Date Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="8ff678ab-73e6-4e07-a6f7-2a64145fddce">
+          <ID>Due Date Quarter</ID>
+          <Name>Due Date Quarter</Name>
+          <SourceAttributeID>Due Date Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1958d8db-9541-490a-9a66-34cba380f788">
+          <ID>Due Date Month Name</ID>
+          <Name>Due Date Month Name</Name>
+          <SourceAttributeID>Due Date Month Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a7a15b76-96d3-47fa-b276-cab502c294bc">
+          <ID>Due Date</ID>
+          <Name>Due Date</Name>
+          <SourceAttributeID>Due Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="06b75f0b-47d0-4653-a156-25bc90c0a85f">
+      <ID>Hierarchy 2</ID>
+      <Name>Date Last Updated</Name>
+      <Levels>
+        <Level dwd:design-time-name="928c6dbd-0706-4837-9b4b-d7ea6949a05a">
+          <ID>Last Updated Date Year</ID>
+          <Name>Last Updated Date Year</Name>
+          <SourceAttributeID>Last Updated Date Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6768b337-4539-449a-8878-aed5792a3d46">
+          <ID>Last Updated Date Quarter</ID>
+          <Name>Last Updated Date Quarter</Name>
+          <SourceAttributeID>Last Updated Date Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="235173dc-cd82-4e1f-aba1-b48f98d61d03">
+          <ID>Last Updated Date Month Name</ID>
+          <Name>Last Updated Date Month Name</Name>
+          <SourceAttributeID>Last Updated Date Month Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="df44cf68-4131-4b22-af7f-a3a4a046b3ec">
+          <ID>Last Updated Date</ID>
+          <Name>Last Updated Date</Name>
+          <SourceAttributeID>Last Updated Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="c8a18c71-f860-47c9-b874-d63c275c7fbd">
+      <ID>Hierarchy 3</ID>
+      <Name>Date Opened</Name>
+      <Levels>
+        <Level dwd:design-time-name="67f51c6e-7fbe-4593-9a8a-3e8c969be887">
+          <ID>Opened Date Year</ID>
+          <Name>Opened Date Year</Name>
+          <SourceAttributeID>Opened Date Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="dece0116-c322-4c7b-8285-2b44a0cb0834">
+          <ID>Opened Date Quarter</ID>
+          <Name>Opened Date Quarter</Name>
+          <SourceAttributeID>Opened Date Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b8438058-1394-441b-ac10-baaa0586228f">
+          <ID>Opened Date Month Name</ID>
+          <Name>Opened Date Month Name</Name>
+          <SourceAttributeID>Opened Date Month Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2c0d106d-0ceb-4883-8730-6ccdba98f396">
+          <ID>Opened Date</ID>
+          <Name>Opened Date</Name>
+          <SourceAttributeID>Opened Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="a7b63e4c-0a8f-4b90-a6fb-de7d6f6b0a90">
+      <ID>Hierarchy 4</ID>
+      <Name>Date Resolved</Name>
+      <Levels>
+        <Level dwd:design-time-name="134ebc6e-7bfd-4edd-bef9-020d3b780054">
+          <ID>Resolved Date Year</ID>
+          <Name>Resolved Date Year</Name>
+          <SourceAttributeID>Resolved Date Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e5dd15e9-e198-40d0-9afb-80cd45acb1f2">
+          <ID>Resolved Date Quarter</ID>
+          <Name>Resolved Date Quarter</Name>
+          <SourceAttributeID>Resolved Date Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7d70a09a-5ef1-4385-9d04-ac3f5d275de1">
+          <ID>Resolved Date Month Name</ID>
+          <Name>Resolved Date Month Name</Name>
+          <SourceAttributeID>Resolved Date Month Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="dad1a848-1d24-4880-b53f-167d611b407a">
+          <ID>Resolved Date</ID>
+          <Name>Resolved Date</Name>
+          <SourceAttributeID>Resolved Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

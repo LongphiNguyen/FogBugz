@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "UpdateCube_SSIS2012", "UpdateCube_SSIS2012\UpdateCube_SSIS2012.dtproj", "{E35398ED-7BE1-4ACD-86F3-6ED804EDB51E}"
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "UpdateCube_2014", "UpdateCube_2014\UpdateCube_2014.dtproj", "{221DB9FE-E235-4A98-88BE-E5B01DA5B9D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E35398ED-7BE1-4ACD-86F3-6ED804EDB51E}.Development|Default.ActiveCfg = Development
-		{E35398ED-7BE1-4ACD-86F3-6ED804EDB51E}.Development|Default.Build.0 = Development
+		{221DB9FE-E235-4A98-88BE-E5B01DA5B9D5}.Development|Default.ActiveCfg = Development
+		{221DB9FE-E235-4A98-88BE-E5B01DA5B9D5}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
