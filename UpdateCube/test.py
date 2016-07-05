@@ -7,6 +7,7 @@ import pyodbc
 from datetime import datetime
 from datetime import date
 import calendar
+import time
 
 # Get FogBugz API connection information
 print fbSettings.URL
@@ -60,20 +61,22 @@ for filt in filters:
 query='edited:"' + str(fbSettings.LASTRECORDED) + '..now"'
 #query="106265"
 #query="105112"
-query="2"
+query="106243"
+query='edited:today'
 # SEARCH for all cases that were recently edited. These are the cases that needs their data updated.
 resp=fb.search(q=query, cols='ixBug,sTitle,sProject,sArea,sCategory,ixPersonAssignedTo,sPersonAssignedTo,sPriority,sStatus,dtOpened,dtClosed,ixPersonOpenedBy,ixBugParent,sFixFor,ixPersonResolvedBy,ixPersonClosedBy,dtResolved,dtDue,dtLastUpdated,ixKanban,ixPersonLastEditedBy,hrsElapsed,hrsCurrEst,hrsOrigEst,hrsElapsedExtra,plugin_kanbanboard_at_ergonlabs_com_ixkanbancolumn,plugin_kanbanboard_at_ergonlabs_com_ncolor')#include Kanban to see other Kanban fields (though not useful)
 # cols='dtResolved,dtDue,dtLastUpdated,ixPersonLastEditedBy,hrsElapsed,hrsCurrEst,hrsOrigEst,hrsElapsedExtra,Kanban,plugin_kanbanboard_at_ergonlabs_com_ixkanbancolumn,plugin_kanbanboard_at_ergonlabs_com_ncolor'
 #resp=fb.search(q="kanban:1",cols='ixBug,sTitle,dtResolved,dtDue,dtLastUpdated,ixKanban,ixPersonLastEditedBy,hrsElapsed,hrsCurrEst,hrsOrigEst,hrsElapsedExtra', max=2)
 #print resp.prettify()
 
-minID=2
-maxID=2
-step=1
+minID=0
+maxID=2000
+step=100
 
 PersonsList = {}
 insertValues = [] # values to insert into dbo.Case
 insertDates = set() # values to insert into dbo.TimeTable
+caseXML=[]
 
 # class for cases, to improve readability
 class Case:
@@ -120,48 +123,160 @@ class Case:
                 self.ClosedBy, self.IDLastEditedBy, self.LastEditedBy, self.OpenedDate, self.ClosedDate, self.ResolvedDate, self.DueDate,
                 self.LastUpdatedDate, self.hrsElapsed, self.hrsCurrEst, self.hrsOrigEst, self.hrsElapsedExtra, self.IDKanban, self.IDKanbanColor)
 
-def getUserName(userID):
-    if userID == '0':
-        return None
-    else:
-        if userID in PersonsList:
-            return PersonsList[userID]
+# requires PersonsList = {} to be defined in parent scope
+def insertToSQL(localminID, localmaxID, PersonsList):
+    "Go through case=minID to case=maxID and get their attributes. Then insert those values into the database."
+    # Now iterate from minID to maxID
+    insertValues = [] # values to insert into dbo.Case
+    insertDates = set() # values to insert into dbo.TimeTable
+    caseNumbers = ','.join([str(s) for s in range(localminID, localmaxID+1)])
+    #for i in range(localminID,localmaxID+1):
+    #    case=fb.search(q="case:"+str(i), cols='ixBug,sTitle,sProject,sArea,sCategory,sPersonAssignedTo,sPriority,sStatus,dtOpened,dtClosed')
+
+    # --------------------------
+    # defining functions to be used
+    # --------------------------
+    def getUserName(userID):
+        if userID == '0' or userID == '-1':
+            return None, None
         else:
-            person = fb.viewPerson(ixPerson=userID)
-            PersonsList[userID] = userName = person.sfullname.string
-            return userName
+            if userID in PersonsList:
+                return userID, PersonsList[userID]
+            else:
+                print 'userID: ' + str(userID)
+                person = fb.viewPerson(ixPerson=userID)
+                if person.sfullname is None: # no name returned
+                    return None, None
+                PersonsList[userID] = userName = person.sfullname.string
+                return userID, userName
 
-# formatDt(dt) takes in a date string (case.dt.string) and formats it to be inserted into dbo.Case. Also places the date into insertDates set to be inserted into dbo.Time
-def formatDt(dt):
-    if dt is not None:
-        formatted=datetime.strptime(dt,'%Y-%m-%dT%H:%M:%SZ')
-        insertDates.update([formatted.strftime('%Y%m%d')])
-        return formatted
+    # formatDt(dt) takes in a date string (case.dt.string) and formats it to be inserted into dbo.Case. Also places the date into insertDates set to be inserted into dbo.Time
+    def formatDt(dt):
+        if dt is not None:
+            formatted=datetime.strptime(dt,'%Y-%m-%dT%H:%M:%SZ')
+            insertDates.update([formatted.strftime('%Y%m%d')])
+
+            #if formatted > maxDate:
+                #maxDate=formatted
+            return formatted
+        else:
+            return None
+    
+    resp=fb.search(q=caseNumbers, cols='ixBug,sTitle,sProject,sArea,sCategory,ixPersonAssignedTo,sPersonAssignedTo,sPriority,sStatus,dtOpened,dtClosed,ixPersonOpenedBy,ixBugParent,sFixFor,ixPersonResolvedBy,ixPersonClosedBy,dtResolved,dtDue,dtLastUpdated,ixKanban,ixPersonLastEditedBy,hrsElapsed,hrsCurrEst,hrsOrigEst,hrsElapsedExtra,plugin_kanbanboard_at_ergonlabs_com_ixkanbancolumn,plugin_kanbanboard_at_ergonlabs_com_ncolor')#include Kanban to see other Kanban fields (though not useful)
+    for case in resp.cases.childGenerator():
+        CaseObj = Case()
+        CaseObj.IDCase = case['ixbug']
+        # ----------
+        # user name stuff
+        # ----------
+        print CaseObj.IDCase
+        # get Opened By user
+        CaseObj.IDOpenedBy, CaseObj.OpenedBy = getUserName(case.ixpersonopenedby.string)
+        # get Resolved By user
+        CaseObj.IDResolvedBy, CaseObj.ResolvedBy = getUserName(case.ixpersonresolvedby.string)
+        # get Closed By user
+        CaseObj.IDClosedBy, CaseObj.ClosedBy = getUserName(case.ixpersonclosedby.string)
+        # get Last Edited By user
+        CaseObj.IDLastEditedBy, CaseObj.LastEditedBy = getUserName(case.ixpersonlasteditedby.string)
+        # get Assigned To user
+        CaseObj.IDAssignedTo = case.ixpersonassignedto.string
+        CaseObj.AssignedTo = case.spersonassignedto.string # oddly, this is the only name that can be obtained directly from the query
+
+        # ----------
+        # date stuff
+        # ----------
+
+        # get Date Opened
+        CaseObj.OpenedDate = formatDt(case.dtopened.string)
+        # get Date Closed
+        CaseObj.ClosedDate = formatDt(case.dtclosed.string)
+        # get Date Resolved
+        CaseObj.ResolvedDate = formatDt(case.dtresolved.string)
+        # get Date Due
+        CaseObj.DueDate = formatDt(case.dtdue.string)
+        # get Last Updated
+        CaseObj.LastUpdatedDate = formatDt(case.dtlastupdated.string)
+
+        # ----------
+        # other info
+        # ----------
+        
+        # get Parent Case
+        StrParentCase = case.ixbugparent.string
+        if StrParentCase == '0':
+            StrParentCase = None
+        CaseObj.IDParentCase = StrParentCase
+        
+        # Kanban
+        CaseObj.IDKanban= case.plugin_kanbanboard_at_ergonlabs_com_ixkanbancolumn.string
+        CaseObj.IDKanbanColor= case.plugin_kanbanboard_at_ergonlabs_com_ncolor.string
+
+        # hours elapsed, estimated, original, extra
+        CaseObj.hrsElapsed = case.hrselapsed.string#round(float(case.hrselapsed.string),3)
+        CaseObj.hrsCurrEst = case.hrscurrest.string#round(float(case.hrscurrest.string),3)
+        CaseObj.hrsOrigEst = case.hrsorigest.string#round(float(case.hrsorigest.string),3)
+        CaseObj.hrsElapsedExtra = case.hrselapsedextra.string#round(float(case.hrselapsedextra.string),3)
+
+        # (StrKanban)
+        CaseObj.Title = case.stitle.string
+        CaseObj.Status = case.sstatus.string
+        CaseObj.Project = case.sproject.string
+        CaseObj.Area = case.sarea.string
+        CaseObj.Category = case.scategory.string
+        CaseObj.Priority = case.spriority.string
+        CaseObj.Milestone = case.sfixfor.string
+        
+        # return the values as a tuple, ordered as in Case.returnInfo()
+        insertValues.append(CaseObj.returnInfo())
+
+        if CaseObj.IDResolvedBy is None and CaseObj.ResolvedBy is not None:
+            caseXML.append(case)
+    return PersonsList;
+
+respOpened = fb.listCases(sFilter="1056", cols='ixBug')#,sTitle,sProject,sArea,sCategory,sPersonAssignedTo,sPriority,sStatus,dtOpened,dtClosed')
+# get max ID
+maxID=0
+for case in respOpened.cases.childGenerator():
+    if case['ixbug']>maxID:
+        maxID=case['ixbug']
+
+maxID=2000
+
+PersonsList = {}
+minID=0
+step=4999 # 1-10000, 10001-20000, etc
+while True:
+    if minID+step < maxID:
+        print "LOOKING AT CASES: " + str(minID) + " to " + str(minID+step) + ", stopping at " + str(maxID) 
+        PersonsList = insertToSQL(minID, minID+step, PersonsList)
+        minID=minID+step+1
     else:
-        return None
+        PersonsList = insertToSQL(minID, maxID, PersonsList)
+        print "LOOKING AT CASES: " + str(minID) + " to " + str(maxID)
+        minID=maxID
+        break
+    time.sleep(5)
 
+# --------------------------------------
+resp=fb.search(q=query, cols='ixBug,sTitle,sProject,sArea,sCategory,ixPersonAssignedTo,sPersonAssignedTo,sPriority,sStatus,dtOpened,dtClosed,ixPersonOpenedBy,ixBugParent,sFixFor,ixPersonResolvedBy,ixPersonClosedBy,dtResolved,dtDue,dtLastUpdated,ixKanban,ixPersonLastEditedBy,hrsElapsed,hrsCurrEst,hrsOrigEst,hrsElapsedExtra,plugin_kanbanboard_at_ergonlabs_com_ixkanbancolumn,plugin_kanbanboard_at_ergonlabs_com_ncolor')#include Kanban to see other Kanban fields (though not useful)
 for case in resp.cases.childGenerator():
     CaseObj = Case()
     CaseObj.IDCase = case['ixbug']
     # ----------
     # user name stuff
     # ----------
-    
+    print CaseObj.IDCase
     # get Opened By user
-    CaseObj.IDOpenedBy = case.ixpersonopenedby.string
-    CaseObj.OpenedBy = getUserName(CaseObj.IDOpenedBy)
+    CaseObj.IDOpenedBy, CaseObj.OpenedBy = getUserName(case.ixpersonopenedby.string)
     # get Resolved By user
-    CaseObj.IDResolvedBy = case.ixpersonresolvedby.string
-    CaseObj.ResolvedBy = getUserName(CaseObj.IDResolvedBy)
+    CaseObj.IDResolvedBy, CaseObj.ResolvedBy = getUserName(case.ixpersonresolvedby.string)
     # get Closed By user
-    CaseObj.IDClosedBy = case.ixpersonclosedby.string
-    CaseObj.ClosedBy = getUserName(CaseObj.IDClosedBy)
+    CaseObj.IDClosedBy, CaseObj.ClosedBy = getUserName(case.ixpersonclosedby.string)
     # get Last Edited By user
-    CaseObj.IDLastEditedBy = case.ixpersonlasteditedby.string
-    CaseObj.LastEditedBy = getUserName(CaseObj.IDLastEditedBy)
+    CaseObj.IDLastEditedBy, CaseObj.LastEditedBy = getUserName(case.ixpersonlasteditedby.string)
     # get Assigned To user
     CaseObj.IDAssignedTo = case.ixpersonassignedto.string
-    CaseObj.AssignedTo = case.spersonassignedto.string # oddly, this name can be obtained directly from the query
+    CaseObj.AssignedTo = case.spersonassignedto.string # oddly, this is the only name that can be obtained directly from the query
 
     # ----------
     # date stuff
@@ -193,10 +308,10 @@ for case in resp.cases.childGenerator():
     CaseObj.IDKanbanColor= case.plugin_kanbanboard_at_ergonlabs_com_ncolor.string
 
     # hours elapsed, estimated, original, extra
-    CaseObj.hrsElapsed = round(float(case.hrselapsed.string),3)
-    CaseObj.hrsCurrEst = round(float(case.hrscurrest.string),3)
-    CaseObj.hrsOrigEst = round(float(case.hrsorigest.string),3)
-    CaseObj.hrsElapsedExtra = round(float(case.hrselapsedextra.string),3)
+    CaseObj.hrsElapsed = case.hrselapsed.string#round(float(case.hrselapsed.string),3)
+    CaseObj.hrsCurrEst = case.hrscurrest.string#round(float(case.hrscurrest.string),3)
+    CaseObj.hrsOrigEst = case.hrsorigest.string#round(float(case.hrsorigest.string),3)
+    CaseObj.hrsElapsedExtra = case.hrselapsedextra.string#round(float(case.hrselapsedextra.string),3)
 
     # (StrKanban)
     CaseObj.Title = case.stitle.string
@@ -209,6 +324,9 @@ for case in resp.cases.childGenerator():
     
     # return the values as a tuple, ordered as in Case.returnInfo()
     insertValues.append(CaseObj.returnInfo())
+
+    if CaseObj.IDResolvedBy is None and CaseObj.ResolvedBy is not None:
+        caseXML.append(case)
 
 # --------------------------------------
 def test():

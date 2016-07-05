@@ -118,8 +118,10 @@ def insertToSQL(localminID, localmaxID, PersonsList):
             if userID in PersonsList:
                 return userID, PersonsList[userID]
             else:
-                print 'useID: ' + str(userID)
+                print 'userID: ' + str(userID)
                 person = fb.viewPerson(ixPerson=userID)
+                if person.sfullname is None: # no name returned
+                    return None, None
                 PersonsList[userID] = userName = person.sfullname.string
                 return userID, userName
 
@@ -202,20 +204,20 @@ def insertToSQL(localminID, localmaxID, PersonsList):
         # return the values as a tuple, ordered as in Case.returnInfo()
         insertValues.append(CaseObj.returnInfo())
     
-    insertDatesTuples = [((x),)*9 for x in insertDates]
+    #insertDatesTuples = [((x),)*9 for x in insertDates]
     
     # Connect to SQL and add/change data
     conn = pyodbc.connect('DRIVER={SQL Server};SERVER='+SERVER+ ';DATABASE='+DATABASE)
     cursor = conn.cursor()
     
     # Add all unique dates to Time Table
-    for x in insertDatesTuples:
-        try:
-            cursor.execute("""INSERT INTO [dbo].[TimeTable] ([IdDate],[Day],[DayofYear],[Dayofweekname],[Week],[Month],[MonthName],[Quarter],[Year]) Values (?,Day(?),DATEPART(dy, ?),DATENAME(dw, ?),DATEPART(wk, ?),DATEPART(mm, ?),DATENAME(mm, ?),'Q'+Cast(DATENAME(qq, ?) as varchar(1)),Year(?))""", x)
-            print 'inserted Time ' + x[0]
-            conn.commit()
-        except Exception as e:
-            conn.rollback()
+    #for x in insertDatesTuples:
+    #    try:
+    #        cursor.execute("""INSERT INTO [dbo].[TimeTable] ([IdDate],[Day],[DayofYear],[Dayofweekname],[Week],[Month],[MonthName],[Quarter],[Year]) Values (?,Day(?),DATEPART(dy, ?),DATENAME(dw, ?),DATEPART(wk, ?),DATEPART(mm, ?),DATENAME(mm, ?),'Q'+Cast(DATENAME(qq, ?) as varchar(1)),Year(?))""", x)
+    #        print 'inserted Time ' + x[0]
+    #        conn.commit()
+    #    except Exception as e:
+    #        conn.rollback()
 
     for x in insertValues:
         try:
@@ -226,6 +228,8 @@ def insertToSQL(localminID, localmaxID, PersonsList):
             print 'inserted Case ' + x[0]
             conn.commit()
         except Exception as e:
+            #print(e)
+            print x[0] + ' failed'
             print(e)
             conn.rollback()
     
@@ -246,7 +250,7 @@ for case in respOpened.cases.childGenerator():
 maxID=int(maxID)
 
 PersonsList = {}
-minID=92221
+minID=0
 step=4999 # 1-10000, 10001-20000, etc
 while True:
     if minID+step < maxID:
@@ -258,7 +262,7 @@ while True:
         print "LOOKING AT CASES: " + str(minID) + " to " + str(maxID)
         minID=maxID
         break
-    time.sleep(5)
+    time.sleep(3)
 
 
 

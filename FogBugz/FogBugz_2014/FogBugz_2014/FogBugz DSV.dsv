@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="35a4a75c-ef3f-4b5f-a0d2-38e2bf7f20a7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="35a4a75c-ef3f-4b5f-a0d2-38e2bf7f20a7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>FogBugz DSV</ID>
   <Name>FogBugz DSV</Name>
   <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
@@ -31,7 +31,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="18" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10686" scrolltop="238" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30004" y="15584" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="15" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10686" scrolltop="238" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30268" y="18389" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -126,6 +126,27 @@
                     <point x="744" y="12242" />
                   </connector>
                 </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="-1067" top="5942" logicalid="14" controlid="8" masterid="0" hint1="0" hint2="0" width="2661" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[Case-Case]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="1" sourceattachpoint="16" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="233" y="8092" />
+                    <point x="-767" y="8092" />
+                    <point x="-767" y="6242" />
+                    <point x="1294" y="6242" />
+                    <point x="1294" y="7242" />
+                  </connector>
+                </ddscontrol>
               </dds>
 </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
@@ -149,7 +170,7 @@
             <xs:element name="dbo_Case" msprop:design-time-name="e97c0457-c974-4c30-a80e-7f7f800ff598" msprop:IsLogical="True" msprop:FriendlyName="Case" msprop:DbTableName="Case" msprop:TableType="View" msprop:QueryDefinition="SELECT        IDCase, IDParentCase, Title, Status, Project, Area, Category, Priority, Milestone, AssignedTo, OpenedBy, ResolvedBy, ClosedBy, LastEditedBy, IDAssignedTo, IDOpenedBy, IDResolvedBy, IDClosedBy, &#xD;&#xA;                         IDLastEditedBy, OpenedDate, ClosedDate, ResolvedDate, DueDate, LastUpdatedDate, hrsElapsed, hrsCurrEst, hrsOrigEst, hrsElapsedExtra, IDKanban, IDKanbanColor, YEAR(OpenedDate) AS OpenedDate_Year, &#xD;&#xA;                         MONTH(OpenedDate) AS OpenedDate_Month, DATENAME([month], OpenedDate) AS OpenedDate_MonthName, 'Q' + CAST(DATEPART(quarter, OpenedDate) AS CHAR(1)) AS OpenedDate_Quarter, YEAR(ClosedDate) &#xD;&#xA;                         AS ClosedDate_Year, MONTH(ClosedDate) AS ClosedDate_Month, DATENAME([month], ClosedDate) AS ClosedDate_MonthName, 'Q' + CAST(DATEPART(quarter, ClosedDate) AS CHAR(1)) AS ClosedDate_Quarter, &#xD;&#xA;                         YEAR(ResolvedDate) AS ResolvedDate_Year, MONTH(ResolvedDate) AS ResolvedDate_Month, DATENAME([month], ResolvedDate) AS ResolvedDate_MonthName, 'Q' + CAST(DATEPART(quarter, ResolvedDate) &#xD;&#xA;                         AS CHAR(1)) AS ResolvedDate_Quarter, YEAR(DueDate) AS DueDate_Year, MONTH(DueDate) AS DueDate_Month, DATENAME([month], DueDate) AS DueDate_MonthName, 'Q' + CAST(DATEPART(quarter, DueDate) &#xD;&#xA;                         AS CHAR(1)) AS DueDate_Quarter, YEAR(LastUpdatedDate) AS LastUpdatedDate_Year, MONTH(LastUpdatedDate) AS LastUpdatedDate_Month, DATENAME([month], LastUpdatedDate) &#xD;&#xA;                         AS LastUpdatedDate_MonthName, 'Q' + CAST(DATEPART(quarter, LastUpdatedDate) AS CHAR(1)) AS LastUpdatedDate_Quarter&#xD;&#xA;FROM            [Case]" msprop:QueryBuilder="SpecificQueryBuilder">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="IDCase" msprop:design-time-name="16a97579-4cf4-4879-bd07-38955d7e967a" msprop:DbColumnName="IDCase" msprop:FriendlyName="IDCase" type="xs:int" minOccurs="0" />
+                  <xs:element name="IDCase" msprop:design-time-name="16a97579-4cf4-4879-bd07-38955d7e967a" msprop:DbColumnName="IDCase" msprop:FriendlyName="IDCase" type="xs:int" />
                   <xs:element name="IDParentCase" msprop:design-time-name="6e01446b-5174-4d0c-b6e3-046bc251402a" msprop:DbColumnName="IDParentCase" msprop:FriendlyName="IDParentCase" type="xs:int" minOccurs="0" />
                   <xs:element name="Title" msprop:design-time-name="41505477-3013-47bd-8950-a33b91bd9cab" msprop:DbColumnName="Title" msprop:FriendlyName="Title" minOccurs="0">
                     <xs:simpleType>
@@ -337,7 +358,7 @@
             <xs:element name="dbo_TimeTable" msprop:design-time-name="813e2c2e-19bf-4782-b40d-76466b14656e" msprop:FriendlyName="TimeTable" msprop:DbSchemaName="dbo" msprop:DbTableName="TimeTable" msprop:TableType="Table" msprop:QueryBuilder="SpecificQueryBuilder">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="IdDate" msprop:design-time-name="7407043b-571e-4b6e-a5e5-e8c53f926145" msprop:DbColumnName="IdDate" msprop:FriendlyName="IdDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="IdDate" msprop:design-time-name="7407043b-571e-4b6e-a5e5-e8c53f926145" msprop:DbColumnName="IdDate" msprop:FriendlyName="IdDate" type="xs:dateTime" />
                   <xs:element name="Day" msprop:design-time-name="252d3d02-781a-4492-9274-88083805ceb3" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" minOccurs="0" />
                   <xs:element name="DayofYear" msprop:design-time-name="c1887b9d-a90e-4221-b250-60ea4841b8f6" msprop:DbColumnName="DayofYear" msprop:FriendlyName="DayofYear" type="xs:int" minOccurs="0" />
                   <xs:element name="DayofWeekName" msprop:design-time-name="c593158a-2bc9-4dde-ae8d-965e65c9173e" msprop:DbColumnName="DayofWeekName" msprop:FriendlyName="DayofWeekName" minOccurs="0">
@@ -418,6 +439,7 @@
         <xs:appinfo>
           <msdata:Relationship name="FK_dbo_lstKanban_dbo_Case" msdata:parent="dbo_lstKanban" msdata:child="dbo_Case" msdata:parentkey="IDKanban" msdata:childkey="IDKanban" msprop:IsLogical="True" />
           <msdata:Relationship name="FK_dbo_lstKanbanColor_dbo_Case" msdata:parent="dbo_lstKanbanColor" msdata:child="dbo_Case" msdata:parentkey="IDKanbanColor" msdata:childkey="IDKanbanColor" msprop:IsLogical="True" />
+          <msdata:Relationship name="Case-Case" msdata:parent="dbo_Case" msdata:child="dbo_Case" msdata:parentkey="IDCase" msdata:childkey="IDParentCase" msprop:IsLogical="True" msprop:Description="" />
         </xs:appinfo>
       </xs:annotation>
     </xs:schema>

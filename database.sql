@@ -1,14 +1,14 @@
 USE [FogBugz]
 GO
 
-/****** Object:  Table [dbo].[AccountHistory]    Script Date: 5/27/2016 9:06:04 AM ******/
+/* Initial structure of Fogbugz database */
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
--- DROP TABLES
+-- DROP TABLES if they already exist
 IF OBJECT_ID('dbo.Case', 'U') IS NOT NULL 
   DROP TABLE dbo.[Case]; 
 GO
@@ -25,7 +25,7 @@ IF OBJECT_ID('dbo.lstKanbanColor', 'U') IS NOT NULL
   DROP TABLE dbo.lstKanbanColor;
 GO
 
--- RECREATE TABLES
+-- CREATE TABLES
 Create Table dbo.TimeTable
 (
     IdDate date PRIMARY KEY CLUSTERED,
